@@ -1,33 +1,92 @@
-body{
-  background-color: #001F45;
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 0;
-}
-.logoimage {
-  box-sizing: border-box;
-}
-
-.logoimage {
-  width: 40%;
-  max-width: 300px;
-  margin: 0 auto;
-  display: block;
-}
-@media screen and (max-width: 600px) {
-  .logoimage img {
-    width: 120%; 
-    max-width: none;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #001F45;
+    text-decoration-color: #fff;
   }
-}
-/* Login Button*/
+  .logoimage {
+     box-sizing: border-box;
+  }
+  
+  .logoimage {
+    width: 70%;
+    max-width: 300px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -130px;
+  }
+  @media screen and (max-width: 600px) {
+    .logoimage img {
+      width: 120%; 
+      max-width: none;
+    }
+  }
+  .login-header {
+   color: white;
+   margin-top: -70px; 
+   text-align: left;
+  }
+  .input-field {
+    width: calc(100% - 30px); /* Adjust width to accommodate icon */
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Rounded edges */
+  }
+  .input-field:focus {
+    outline: none;
+    border-color: #007bff; /* Adjust border color on focus */
+    box-shadow: 0 0 5px #007bff; /* Add shadow on focus */
+  }
+  .field {
+    position: relative;
+  }
+
+  .field i {
+    position: absolute;
+    left: 10px; /* Adjust icon position */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ccc;
+  }
+
+  .field input {
+    padding-left: 30px; 
+    width: calc(100% - 30px); 
+    height: 30px;
+    border-radius: 8px;
+  }
+
+  .input-group input{
+    margin-bottom: 15px;
+  }  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input {
+    width: calc(100% - 30px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+  }
+  
+  /* Login Button*/
 .loginButton {
   position: relative;
-  border-radius: 100px;
+  border-radius: 15px;
   background-color: #4affb3; 
   border-color: rgba(255, 255, 255, 0);
   border-style: solid;
-  min-height:60px;
+  min-height:30px;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -38,27 +97,14 @@ body{
   font-weight: 400;
   color: #000000;
   }
-
-/* Sign Up button*/
-
-.signupButton {
-  position: relative;
-  border-radius: 100px;
-  background-color: #4affb3; 
-  border-color: rgba(255, 255, 255, 0);
-  border-style: solid;
-  min-height:60px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-}
-
-.text-wrapper {
-  font-family: "Inter-Bold", Helvetica;
-  color: #000000;
-  font-size: 30px;
-  font-weight: bold;
-}
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  .form-link a {
+    color: #ffffff; /* Change the color to white */
+  }
+  
 
 .line{
   position: relative;
@@ -95,7 +141,6 @@ body{
   position: relative;
 }
 
-
 .google-icon {
   width: 24px;
   height: 24px;
@@ -118,21 +163,16 @@ body{
 .form-link span {
   font-size: 20px;
   font-weight: 400;
-  color: #ffffff; 
+  color: #ffffff; /* Change the color to white */
 }
 
 .form-link a.signup-link {
   font-size: 20px;
   font-weight: 400;
-  color: #4affb3; 
+  color: #4affb3; /* Change the color to green */
 }
 
 
 
-
-
-
-
-
-
-
+  
+  

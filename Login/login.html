@@ -1,50 +1,61 @@
-<!DOCTYPE html> 
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DreamsScape Login</title>
-    <link rel="stylesheet" href="login.css">
-  </head>
-  <body>
-    <div class="container">
-      <br>
-       <div class="logoimage"><img class="img" src="dreamScapeLogo.png" alt = "Dreamscape logo image" /></div> 
-       <br>
-       <br>
-       <br>
-       <div class="loginButton">
-      <a href="index.html"><label class="text-wrapper">Log in</label></a>
-    </div>
-    <br>
-    <br>
-    <div class="signupButton">
-        <label class="text-wrapper">Sign Up</label>
-    </div>
-    <br>
-    <br>
-    <div class="line"></div>
-    <br>
-    <br>
-    <div class="googleButton">
-      <button class="google-button">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
-          <path d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z"/>
-        </svg>
-        <span class="button-text">Login with Google</span>
-      </button>
-    </div>
-    <div class="form-link">
-      <span>Don't have an account? <a href="#" class="link signup-link">Signup</a></span>
-  </div>
-  
-</div>
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Login form </title>
 
+        <link rel="stylesheet" href="login.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
 
-    
-    
-
-  
-  </body
-  
- </html>
+                      
+    </head>
+    <body>
+        <div class="content">
+            
+                <div class="logoimage"><img class="img" src="dreamScapeLogo.png" alt="Dreamscape logo image" /></div>
+                <div class="form login">
+                    <div class="form-content">
+                        <header class="login-header">Login to your account</header>
+                    <br>
+                    <form action="#">
+                        <div class="field input-field">
+                            <i class="fas fa-envelope"></i>
+                            <input class="input-field" type="text" placeholder="Email" name="email">
+                        </div>
+                        <br>
+                        <br>
+                       
+                        <div class="field input-field password-container">
+                            <input type="password" placeholder="Password" class="password">
+                            <i class="fa fa-lock"></i>
+                        </div>
+                        <br>   
+                        <br>         
+                        <div class="loginButton">
+                            <a href="index.html"><label class="text-wrapper">Log in</label></a>
+                          </div>
+                          <br>
+                        <div class="form-link">
+                         <a href="#" class="forgot-pass">Forgot password?</a>
+                        </div>  
+                        <div class="line"></div>
+                        <br>
+                        <div class="googleButton">
+                        <button class="google-button" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+                              <path d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z"/>
+                            </svg>
+                            <span class="button-text">Login with Google</span>
+                          </button>
+                        </div>
+                        </form>
+                    </div> 
+                    <br>
+                    <div class="form-link">
+                        <span>Don't have an account? <a href="#" class="link signup-link">Signup</a></span>
+                    </div>
+            </div>
+        </body>
+        </html>
+               
