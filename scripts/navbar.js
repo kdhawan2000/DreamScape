@@ -32,11 +32,11 @@ function createNavbar(index) {
 
 // Example usage with Font Awesome icons
 const navbarItems = [
-    { pageTitle: 'Home', iconName: 'fa-solid fa-house', link: '#' }, // Hamburger icon with link #
+    { pageTitle: 'Home', iconName: 'fa-solid fa-house', link: '../views/homePage.html' }, // Hamburger icon with link #
     { pageTitle: 'Calendar', iconName: 'fa-solid fa-calendar-days', link: '' }, // Home icon with link to home.html
-    { pageTitle: 'Search', iconName: 'fa-solid fa-magnifying-glass', link: '' }, // Profile icon with link to profile.html
-    { pageTitle: 'Notifications', iconName: 'fa-solid fa-bell', link: '' }, // Message icon with link to messages.html
-    { pageTitle: 'Profile', iconName: 'fa-solid fa-user', link: 'settings.html' }, // Settings icon with link to settings.html
+    { pageTitle: 'Search', iconName: 'fa-solid fa-magnifying-glass', link: '../views/searchPage.html' }, // Profile icon with link to profile.html
+    { pageTitle: 'Notifications', iconName: 'fa-solid fa-bell', link: '../views/notificationsPage.html' }, // Message icon with link to messages.html
+    { pageTitle: 'Profile', iconName: 'fa-solid fa-user', link: '' }, // Settings icon with link to settings.html
 ];
 
 createNavbar();

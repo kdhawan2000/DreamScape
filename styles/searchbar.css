@@ -1,0 +1,54 @@
+.search-bar {
+    display: flex;
+    gap: 5px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.input-group>input {
+    cursor: pointer;
+
+}
+
+.input-group {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.search-icon {
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    color: #001F45;
+}
+
+.filter-icon {
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    background-color: #001F45;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.form-control {
+    flex: 1;
+    border: none;
+    padding: 8px;
+    outline: none;
+}
+
+
+
+/* Adjust icon sizes if needed */
+.fa-search,
+.fa-filter {
+    font-size: 16px;
+}

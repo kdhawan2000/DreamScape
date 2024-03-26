@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="../styles/homepage.css">
+    <link rel="stylesheet" href="../styles/searchbar.css">
     <link rel="stylesheet" href="../styles/navbar.css">
 </head>
 
@@ -20,12 +20,23 @@
             <p class="current-location">Calgary, AB</p>
         </div>
         <div class="search-bar">
-            <input type="text" class="search-input" placeholder="Search for Events or Organizers">
-            <button class="search-button"><i class="fas fa-search"></i></button>
+            <!-- <form action="#" method="get"> -->
+            <div class="input-group">
+                <div class="search-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <input type="text" name="search" placeholder="Search for Events or Organizers" class="form-control" />
+            </div>
+            <!-- </form> -->
+            <div class="filter-icon">
+                <i class="fas fa-filter"></i>
+            </div>
         </div>
+
     </div>
-    <div class="homepage-container">
+    <div class="upcoming-events-title">
         <h2>Upcoming Events</h2>
+        <p>See all</p>
     </div>
     <div class="upcoming-events-container">
         <div class="event-card">
@@ -59,8 +70,9 @@
             </div>
         </div>
     </div>
-    <div class="homepage-container">
+    <div class="nearby-events-title">
         <h2>Nearby Events</h2>
+        <p>See all</p>
     </div>
     <div class="nearby-events-container">
         <div class="event-card">
