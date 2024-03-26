@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../styles/calendar.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+</head>
+
+<body>
+    <script src="../scripts/navbar.js"></script>
+
+    <h1 class="calendar-heading">Booked Events</h1>
+
+    <div class="calendar-controls">
+      <button id="prev-day">&lt;</button>
+      <h2 id="current-date">Date</h2>
+      <button id="next-day">&gt;</button>
+    </div>
+    
+    <div class="time-scroll-container">
+      <table id="time-table">
+        <tbody id="time-body">
+          <!-- Time slots will be generated here -->
+        </tbody>
+      </table>
+    </div>
+    
+    <div class="button-container">
+      <button id="export-button">Export</button>
+      <button id="done-button">Done</button>
+    </div>
+    <script src="../scripts/calendar.js"></script>
+
+</body>
+
+</html>
