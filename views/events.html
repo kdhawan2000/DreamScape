@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .event-card {
+        display: flex;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .event-date-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* Center vertically */
+        align-items: center;
+        /* Center horizontally */
+        margin-right: 15px;
+        /* Add margin for spacing */
+    }
+
+    .day {
+        font-size: 24px;
+    }
+
+    .month {
+        font-size: 10px;
+        /* Remove default margin */
+        /* Adjust font size */
+    }
+
+    .event-information-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* Center vertically */
+        /* align-items: center; */
+    }
+
+    .event-image-container {
+        border-radius: 5px;
+        overflow: hidden;
+        object-fit: cover;
+
+        justify-content: center;
+        /* Center vertically */
+        align-items: center;
+    }
+
+</style>
+
+<body>
+    <div class="event-card">
+        <div class="event-date-container">
+            <p class="day">25</p>
+            <p class="month">JUN</p>
+        </div>
+        <div class="event-information-container">
+            <p>Bruno Mars Eras Tour</p>
+            <p>Tue, Jun 25 - 7:00 PM</p>
+            <p>555 Saddledome Rise SE, Calgary, AB T2G 2W1</p>
+            <p>Get ready for an electrifying night with Bruno
+                Mars! Feel the groove, dance to the hits, and
+                experience unforgettable energy live in
+                Saddledome.</p>
+            <p>$30.00 CAD /Person</p>
+        </div>
+        <div class="event-image-container">
+            <img class="event-image" src="../assets/Bruno Mars Concert.png" alt="Event Image">
+        </div>
+
+    </div>
+</body>
+
+</html>
