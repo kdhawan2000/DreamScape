@@ -25,22 +25,31 @@
         </div>
         <div>
             <button class="edit-button">Edit Profile</button>
-            <button class="notification-button">Edit Notification Settings</button>
+            <button class="notification-button" onclick="redirectToNotificationsPage()">Edit Notification Settings</button>
             <button class="payment-button">Manage Saved Payment Methods</button>
-            <button class="logout-button" onclick="redirectToHomepage()">Logout</button>
+            <button class="logout-button" onclick="redirectToLogin()">Logout</button>
             <button class="delete-button" onclick="confirmDelete()">Delete Account</button>
         </div>
     </div>
 
     <script>
+        function redirectToNotificationsPage() {
+            window.location.href = "/views/notificationsPage.html";
+        }
+
+        // temporary method
+        function redirectToHomePage() {
+            window.location.href = "/views/homepage.html";
+        }
+
         function redirectToLogin() {
-            window.location.href = "/views/login.html";
+            window.location.href = "/views/Login/login.html";
         }
 
         function confirmDelete() {
             if (confirm("Are you sure you want to delete your account?")) {
                 alert("Account deleted successfully!");
-                window.location.href = "/views/homepage.html";
+                redirectToHomePage;
             }
         }
     </script>
