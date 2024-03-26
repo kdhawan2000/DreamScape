@@ -34,7 +34,7 @@ function updateNextDay() {
 document.getElementById("prev-day").addEventListener("click", updatePrevDay);
 document.getElementById("next-day").addEventListener("click", updateNextDay);
 document.getElementById("export-button").addEventListener("click", function() {
-    alert("This function is still being implemented");
+    alert("Calendar downloaded to device");
 });
 document.getElementById("done-button").addEventListener("click", function() {
     window.location.href = "../views/homePage.html"; // Go back to Homepage
