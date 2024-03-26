@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #001F45;
+            color: #fff;
+        }
+
+        .profilephoto-container {
+            text-align: center;
+            margin-bottom: 20px; /* Added margin bottom for spacing */
+        }
+
+        .profile-photo {
+            display: inline-block;
+            position: relative;
+            margin-bottom: 20px; /* Added margin bottom for spacing */
+        }
+
+        .profile-photo img {
+            width: 100px;
+            height: 100px; 
+            border-radius: 50%;
+        }
+
+        .edit-profile-button{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .edit-button,
+        .notification-button,
+        .payment-button,
+        .logout-button,
+        .delete-button {
+            display: block;
+            width: 350px; /* Increased button width */
+            margin: 20px auto; /* Center-align buttons */
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 15px; /* Increased button padding */
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .edit-profile-button {
+            background-color: #28a745; 
+        }
+
+        .delete-button {
+            margin-top: 40px;
+            background-color: red;
+        }
+
+        h2 {
+            color: #fff;
+            margin-bottom: 70px; /* Added margin bottom for spacing */
+        }
+    </style>
+</head>
+
+<body>
+    <script src="../scripts/navbar.js"></script>
+
+    <div class="profilephoto-container">
+        <div class="profile-photo">
+            <img src="../assets/profile.png" alt="Profile Photo">
+            <button class="edit-profile-button">Edit</button>
+        </div>
+        <div>
+            <h2>Ken Kapoor</h2>
+        </div>
+        <div>
+            <button class="edit-button">Edit Profile</button>
+            <button class="notification-button">Edit Notification Settings</button>
+            <button class="payment-button">Manage Saved Payment Methods</button>
+            <button class="logout-button" onclick="redirectToHomepage()">Logout</button>
+            <button class="delete-button" onclick="confirmDelete()">Delete Account</button>
+        </div>
+    </div>
+
+    <script>
+        function redirectToLogin() {
+            // Redirecting to the homepage in the views folder
+            window.location.href = "/views/login.html";
+        }
+
+        function confirmDelete() {
+            if (confirm("Are you sure you want to delete your account?")) {
+                alert("Account deleted successfully!");
+                window.location.href = "/views/homepage.html";
+            }
+        }
+    </script>
+</body>
+
+</html>
