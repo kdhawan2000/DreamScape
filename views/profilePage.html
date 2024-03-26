@@ -24,22 +24,31 @@
             <h2>Ken Kapoor</h2>
         </div>
         <div>
-            <button class="edit-button">Edit Profile</button>
+            <button class="edit-button" onclick="redirectToProfileEditPage()">Edit Profile</button>
             <button class="notification-button" onclick="redirectToNotificationsPage()">Edit Notification Settings</button>
-            <button class="payment-button">Manage Saved Payment Methods</button>
+            <button class="payment-button" onclick="redirectToPaymentsPage()">View Saved Payment Methods</button>
             <button class="logout-button" onclick="redirectToLogin()">Logout</button>
             <button class="delete-button" onclick="confirmDelete()">Delete Account</button>
         </div>
     </div>
 
     <script>
+        function redirectToProfileEditPage() {
+            // window.location.href = "/views/profileEditPage.html";
+            alert("This page is under construction. Kindly check back later.");
+        }
+
         function redirectToNotificationsPage() {
             window.location.href = "/views/notificationsPage.html";
         }
 
+        function redirectToPaymentsPage() {
+            alert("You do not have any saved payment pages! Kindly save a payment method while making a purchase to view them!");
+        }
+
         // temporary method
         function redirectToHomePage() {
-            window.location.href = "/views/homepage.html";
+            window.location.href = "/views/homePage.html";
         }
 
         function redirectToLogin() {
@@ -49,7 +58,7 @@
         function confirmDelete() {
             if (confirm("Are you sure you want to delete your account?")) {
                 alert("Account deleted successfully!");
-                redirectToHomePage;
+                redirectToHomePage();
             }
         }
     </script>
