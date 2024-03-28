@@ -1,0 +1,55 @@
+body {
+    background-color: navy;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+section {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+h3 {
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+em {
+    font-style: normal;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    display: block;
+}
+
+.description {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 60%;
+    color: black;
+    /* Added font color */
+}
+
+.book-event {
+    display: inline-block;
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.book-event:hover {
+    background-color: darkgreen;
+}
