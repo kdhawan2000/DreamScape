@@ -1,0 +1,15 @@
+.price-sort {
+    display: inline-block;
+    background-color: #f0f0f0;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.price-sort:hover {
+    background-color: #e0e0e0;
+}
+
+.price-sort i {
+    margin-right: 6px;
+}
