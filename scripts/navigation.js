@@ -13,3 +13,7 @@ function redirectToLogin() {
 function redirectToSignup() {
     window.location.href = "../views/signup.html";
 }
+
+function redirectToProfilePage() {
+    window.location.href = "../views/profilePage.html";
+}

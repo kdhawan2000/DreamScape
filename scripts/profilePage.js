@@ -1,8 +1,5 @@
-import * as navigation from './navigation.js';
-
 function redirectToProfileEditPage() {
-    // window.location.href = "/views/profileEditPage.html";
-    alert("This page is under construction. Kindly check back later.");
+    window.location.href = "../views/editProfile.html";
 }
 
 function redirectToPaymentsPage() {
@@ -14,4 +11,17 @@ function confirmDelete() {
         alert("Account deleted successfully!");
         redirectToHomePage();
     }
+}
+
+function updateName() {
+    var newName = document.getElementById('nameInput').value;
+    localStorage.setItem('name', newName);
+    alert('Name updated successfully!');
+    // Redirect to the other profile page
+    window.location.href = 'profilePage.html';
+}
+
+function updateCred() {
+    alert('Check your email inbox to confirm change!');
+    window.location.href = "../views/profilePage.html";
 }

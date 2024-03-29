@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
+    <title>Profile Page</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="../styles/navbar.css">
@@ -13,27 +12,49 @@
     <script src="../scripts/navigation.js"></script>
     <script src="../scripts/profilePage.js"></script>
 </head>
-
 <body>
-    
+
+    <script src="../scripts/navbar.js"></script>
+
     <div class="profilephoto-container">
         <div class="profile-photo">
-            <img src="../assets/profile.png" alt="Profile Photo">
-            <button class="edit-profile-button">Edit</button>
+            <img src="../user-database/profile.png" alt="Profile Photo">
+            <button class="edit-profile-button" onclick="redirectToProfileEditPage()">Edit</button>
         </div>
 
         <div>
-            <h2>Ken Kapoor</h2>
-        </div>
-
-        <div>
-            <button class="edit-button" onclick="redirectToProfileEditPage()">Edit Profile</button>
+            <!-- Display the updated name -->
+            <h2 id="profile-name"></h2>
+            <button class="edit-button" onclick="redirectToProfileEditPage()">Edit Profile Name</button>
             <button class="notification-button" onclick="redirectToNotificationsPage()">Edit Notification Settings</button>
             <button class="payment-button" onclick="redirectToPaymentsPage()">View Saved Payment Methods</button>
             <button class="logout-button" onclick="redirectToLogin()">Logout</button>
             <button class="delete-button" onclick="confirmDelete()">Delete Account</button>
         </div>   
     </div>
-</body>
 
+    <script>
+        // Retrieve the name from localStorage
+        var newName = localStorage.getItem('name');
+        if (newName) {
+            document.getElementById('profile-name').innerText = newName;
+        } else {
+            // Fetch name from name.txt if not available in localStorage
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    if (xhr.status === 200) {
+                        var name = xhr.responseText;
+                        document.getElementById('profile-name').innerText = name;
+                    } else {
+                        console.error('Failed to fetch name:', xhr.status);
+                    }
+                }
+            };
+            xhr.open('GET', '../user-database/name.txt', true);
+            xhr.send();
+        }
+    </script>
+    
+</body>
 </html>
