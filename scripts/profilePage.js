@@ -22,6 +22,6 @@ function updateName() {
 }
 
 function updateCred() {
-    alert('Check your email inbox to confirm change!');
+    alert('Check your email inbox to continue the change!');
     window.location.href = "../views/profilePage.html";
 }
