@@ -9,3 +9,7 @@ function redirectToNotificationsPage() {
 function redirectToLogin() {
     window.location.href = "../views/login.html";
 }
+
+function redirectToSignup() {
+    window.location.href = "../views/signup.html";
+}
