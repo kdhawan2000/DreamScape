@@ -3,7 +3,7 @@ function redirectToHomePage() {
 }
 
 function redirectToNotificationsPage() {
-    window.location.href = "/views/notificationsPage.html";
+    window.location.href = "../views/notificationsPage.html";
 }
 
 function redirectToLogin() {

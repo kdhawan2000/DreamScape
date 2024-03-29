@@ -10,49 +10,30 @@
     <link rel="stylesheet" href="../styles/navbar.css">
     <link rel="stylesheet" href="../styles/profilePage.css">
 
+    <script src="../scripts/navigation.js"></script>
+    <script src="../scripts/profilePage.js"></script>
 </head>
 
 <body>
-    <script src="../scripts/navigation.js"></script>
-
+    
     <div class="profilephoto-container">
         <div class="profile-photo">
             <img src="../assets/profile.png" alt="Profile Photo">
             <button class="edit-profile-button">Edit</button>
         </div>
+
         <div>
             <h2>Ken Kapoor</h2>
         </div>
+
         <div>
             <button class="edit-button" onclick="redirectToProfileEditPage()">Edit Profile</button>
             <button class="notification-button" onclick="redirectToNotificationsPage()">Edit Notification Settings</button>
             <button class="payment-button" onclick="redirectToPaymentsPage()">View Saved Payment Methods</button>
             <button class="logout-button" onclick="redirectToLogin()">Logout</button>
             <button class="delete-button" onclick="confirmDelete()">Delete Account</button>
-        </div>
+        </div>   
     </div>
-
-    <script>
-        function redirectToProfileEditPage() {
-            // window.location.href = "/views/profileEditPage.html";
-            alert("This page is under construction. Kindly check back later.");
-        }
-
-        function redirectToNotificationsPage() {
-            window.location.href = "/views/notificationsPage.html";
-        }
-
-        function redirectToPaymentsPage() {
-            alert("You do not have any saved payment pages! Kindly save a payment method while making a purchase to view them!");
-        }
-
-        function confirmDelete() {
-            if (confirm("Are you sure you want to delete your account?")) {
-                alert("Account deleted successfully!");
-                redirectToHomePage();
-            }
-        }
-    </script>
 </body>
 
 </html>
