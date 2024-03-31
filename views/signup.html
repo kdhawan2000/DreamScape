@@ -6,7 +6,9 @@
         <title> Login form </title>
 
         <link rel="stylesheet" href="../styles/login.css">
+        <link rel="stylesheet" href="../styles/signup.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+        <script src="../scripts/toggleEyePassword.js"></script>
 
                       
     </head>
@@ -22,6 +24,7 @@
                         <div class="field input-field">
                             <i class="fas fa-user"></i>
                             <input class="input-field" type="text" placeholder="Username" name="username">
+                            
                         </div>
                         <br>
                         <div class="field input-field">
@@ -31,16 +34,19 @@
                         <br>            
                         <div class="field input-field password-container">
                             <input type="password" placeholder="Password" class="password">
+                            <span class="password-toggle-icon" onclick="togglePasswordVisibility()">
+                                <i class="fas fa-eye"></i>
+                            </span>
                             <i class="fa fa-lock"></i>
                         </div>
                         <br>   
                         <br>         
-                        <div class="loginButton">
-                            <a href="index.html"><label class="text-wrapper">Sign Up</label></a>
+                        <div class="signUpButton">
+                            <a href="homePage.html"><label class="text-wrapper">Sign Up</label></a>
                           </div>
                           <br>
-                    <div class="form-link">
-                        <span>Already have an account? <a href="#" class="link signup-link">Signin</a></span>
+                        <div class="form-link">
+                        <span>Already have an account? <a href="login.html" class="link signup-link">Log In</a></span>
                     </div>
             </div>
         </body>

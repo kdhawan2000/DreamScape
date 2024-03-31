@@ -17,3 +17,9 @@ function redirectToSignup() {
 function redirectToProfilePage() {
     window.location.href = "../views/profilePage.html";
 }
+
+function redirectToSignUp() {
+    window.location.href = "signup.html";
+}
+
+

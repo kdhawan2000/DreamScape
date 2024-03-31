@@ -1,0 +1,23 @@
+.signUpButton {
+    position: relative;
+    border-radius: 15px;
+    background-color: #4affb3; /* Set the background color to green */
+    border-color: rgba(255, 255, 255, 0);
+    border-style: solid;
+    min-height:30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .text-wrapper {
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 400;
+    color: #000000;
+  }
+  
+  .signUpButton:hover {
+    background-color: #0056b3; /* Change the hover background color */
+  }
+  
+  

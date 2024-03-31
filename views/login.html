@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     
         <script src="../scripts/navigation.js"></script>
+        <script src="../scripts/toggleEyePassword.js"></script>
 
     </head>
     <body>
@@ -28,18 +29,38 @@
                         <br>
                        
                         <div class="field input-field password-container">
-                            <input type="password" placeholder="Password" class="password">
-                            <i class="fa fa-lock"></i>
-                        </div>
+                            <input type="password" placeholder="Password" class="password" id="password">
+                            <span class="password-toggle-icon" onclick="togglePasswordVisibility()">
+                                <i class="fas fa-eye"></i>
+                            </span>
+                            <i class="fas fa-lock"></i>
+                        </div>                   
+
                         <br>   
                         <br>         
                         <div class="loginButton">
-                            <a href="login.html"><label class="text-wrapper">Log in</label></a>
+                            <a href="homePage.html"><label class="text-wrapper">Log in</label></a>
                           </div>
+              
                           <br>
-                        <div class="form-link">
-                         <a href="#" class="forgot-pass">Forgot password?</a>
-                        </div>  
+                          <div class="form-link">
+                            <a href="#" class="forgot-pass" onclick="openPopup(event)">Forgot password?</a>
+                        </div>
+                        
+                               
+                        <div id="popup" class="popup">
+                            <div class="popup-content">
+                                <span class="close" onclick="closePopup()">&times;</span>
+                                <h2>Forgot Password?</h2>
+                                <p>Please enter your email address to reset your password:</p>
+                                <form id="resetPasswordForm" onsubmit="event.preventDefault(); simulateReset()">
+                                    <input type="email" id="email" placeholder="Your Email">
+                                    <button type="submit">Reset Password</button>
+                                </form>
+                                <p id="resetMessage" class="reset-message">Password reset link has been sent to your email.</p>
+                            </div>
+                        </div>                 
+                                                  
                         <div class="line"></div>
                         <br>
                         <div class="googleButton">
@@ -54,7 +75,7 @@
                     </div> 
                     <br>
                     <div class="form-link">
-                        <span>Don't have an account? <a href="#" class="link signup-link">Signup</a></span>
+                        <span>Don't have an account? <a href="signup.html" class="link signup-link">Signup</a></span>
                     </div>
             </div>
         </body>
