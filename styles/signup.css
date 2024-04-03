@@ -1,14 +1,16 @@
 .signUpButton {
-    position: relative;
-    border-radius: 15px;
-    background-color: #4affb3; /* Set the background color to green */
-    border-color: rgba(255, 255, 255, 0);
-    border-style: solid;
-    min-height:30px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-  }
+  width: 70%; 
+  min-height: 30px; 
+  position: absolute;
+  border-radius: 15px;
+  background-color: #4affb3; 
+  border-color: rgba(255, 255, 255, 0);
+  border-style: solid;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+ }
   
   .text-wrapper {
     font-family: "Inter-Bold", Helvetica;

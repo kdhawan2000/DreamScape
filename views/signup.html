@@ -33,18 +33,28 @@
                         </div>
                         <br>            
                         <div class="field input-field password-container">
-                            <input type="password" placeholder="Password" class="password">
-                            <span class="password-toggle-icon" onclick="togglePasswordVisibility()">
+                            <input type="password" placeholder="Password" class="password" id="password">
+                            <span class="password-toggle-icon" onclick="togglePasswordVisibility(this)">
                                 <i class="fas fa-eye"></i>
                             </span>
                             <i class="fa fa-lock"></i>
                         </div>
-                        <br>   
-                        <br>         
+                        <br>
+                         <!-- New password field -->
+                         <div class="field input-field password-container">
+                            <input type="password" placeholder="Re-enter Password" class="password" id="reEnterPassword">
+                            <span class="password-toggle-icon" onclick="togglePasswordVisibility(this)">
+                                <i class="fas fa-eye"></i>
+                            </span>
+                            <i class="fa fa-lock"></i>
+                        </div>
+                         <br>          
                         <div class="signUpButton">
                             <a href="homePage.html"><label class="text-wrapper">Sign Up</label></a>
                           </div>
                           <br>
+                            <br>
+                            <br>
                         <div class="form-link">
                         <span>Already have an account? <a href="login.html" class="link signup-link">Log In</a></span>
                     </div>

@@ -18,7 +18,7 @@ body {
   box-sizing: border-box;
   width: 70%;
   max-width: 300px;
-  margin: 0 auto;
+  margin: auto;
   display: block;
 }
 
