@@ -22,15 +22,29 @@ function generateTimeSlots() {
 
         eventCell.classList.add("event-column", "event-cell");
 
-        // Create a button element
-        let button = document.createElement("button");
-        button.innerText = "Click me"; // Button text
-        button.addEventListener("click", function() {
-            alert(`Button ${i} clicked`); // Example action on button click
-        });
+        const currentTimeString = `${String(i).padStart(2, '0')}:00`;
 
-        // Append the button to the event cell
-        eventCell.appendChild(button);
+        fetch('../user-database/events.json')
+            .then(response => response.json())
+            .then(data => {
+                const currentDateISOString = currentDate.toISOString().split('T')[0];
+                const event = data.find(event => event.date === currentDateISOString && event.start_time === currentTimeString);
+
+                if (event) {
+                    // Create a button element with event name as text
+                    let button = document.createElement("button");
+                    button.innerText = event.name; // Event name as button text
+                    button.classList.add("event-button"); // Add event-button class
+
+                    button.addEventListener("click", function() {
+                        alert(`Event Name: ${event.name}\nEvent Info: ${event.info}`); // Display event info on button click
+                    });
+
+                    // Append the button to the event cell
+                    eventCell.appendChild(button);
+                }
+            })
+            .catch(error => console.error('Error:', error));
 
         row.appendChild(timeSlotCell);
         row.appendChild(eventCell);
@@ -42,11 +56,13 @@ function generateTimeSlots() {
 function updatePrevDay() {
     currentDate.setDate(currentDate.getDate() - 1);
     updateCalendar();
+    generateTimeSlots();
 }
 
 function updateNextDay() {
     currentDate.setDate(currentDate.getDate() + 1);
     updateCalendar();
+    generateTimeSlots();
 }
 
 document.getElementById("prev-day").addEventListener("click", updatePrevDay);

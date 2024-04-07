@@ -1,3 +1,4 @@
+/* CSS for Calendar */
 * {
     margin: 0;
     padding: 0;
@@ -40,7 +41,10 @@ body {
 }
 
 #time-body td {
-    padding: 10px;
+    padding-top: 20px; /* Increase padding-top to increase cell height */
+    padding-bottom: 20px; /* Increase padding-bottom to increase cell height */
+    padding-left: 10px; /* Keep padding-left minimal */
+    padding-right: 10px; /* Keep padding-right minimal */
 }
 
 .time-scroll-container {
@@ -50,15 +54,18 @@ body {
 }
 
 .time-slot {
-    width: 60px; /* Adjust the width of the time slot column */
+    width: 100px; /* Adjust the width of the time slot column */
 }
 
 .event-column {
-    /* Adjust the width of the event column */
+    width: calc(100% - 100px); /* Adjust the width of the event column */
+    height: 100%; /* Set the height of the event column to 100% */
 }
 
 .event-cell {
     border-bottom: 1px solid #ccc; /* Add borders to event cells */
+    height: 100%; /* Set the height of the event cell to 100% */
+    position: relative; /* Add relative positioning */
 }
 
 .button-container {
@@ -73,6 +80,19 @@ body {
     background-color: white;
     z-index: 999; /* Ensure buttons are above other content */
     padding: 10px;
+}
+
+.event-button {
+    background-color: navy;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    width: calc(100% - 10px); /* Adjust width to fit within cell */
+    height: calc(100% - 10px); /* Adjust height to fit within cell */
+    position: absolute; /* Set position to absolute */
+    top: 50%; /* Position button vertically in the middle */
+    left: 50%; /* Position button horizontally in the middle */
+    transform: translate(-50%, -50%); /* Center button */
 }
 
 #export-button,
