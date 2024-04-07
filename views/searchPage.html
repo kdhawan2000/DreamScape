@@ -14,6 +14,8 @@
 
 <body>
     <script src="../scripts/navbar.js"></script>
+
+    <div class="overlay" id="overlay"></div>
     <div class="homepage-container">
         <div class="location-container">
             <p class="location-text">Location</p>
@@ -28,7 +30,7 @@
                 <input type="text" name="search" placeholder="Search for Events or Organizers" class="form-control" />
             </div>
             <!-- </form> -->
-            <div class="filter-icon">
+            <div class="filter-icon" id="filterBtn">
                 <i class="fas fa-filter"></i>
             </div>
         </div>
@@ -37,7 +39,142 @@
             Price
             <i class="fas fa-sort-up"></i>
         </div>
+    </div>
 
+    <div class="events-container">
+        <div class="event-card">
+            <div class="event-date-container">
+                <p class="day">25</p>
+                <p class="month">JUN</p>
+            </div>
+            <div class="event-information-container">
+                <p class="event-title">Bruno Mars Eras Tour</p>
+                <p class="event-date-time">Tue, Jun 25 - 7:00 PM</p>
+                <p class="event-address">555 Saddledome Rise SE, Calgary, AB T2G 2W1</p>
+                <p class="event-description">Get ready for an electrifying night with Bruno
+                    Mars! Feel the groove, dance to the hits, and
+                    experience unforgettable energy live in
+                    Saddledome.</p>
+                <p class="event-price"><span>$30.00 CAD</span> /Person</p>
+            </div>
+            <div class="event-image-container">
+                <img class="event-image" src="../assets/Bruno Mars Square.png" alt="Event Image">
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="event-card">
+            <div class="event-date-container">
+                <p class="day">25</p>
+                <p class="month">JUN</p>
+            </div>
+            <div class="event-information-container">
+                <p class="event-title">Journey World Tour</p>
+                <p class="event-date-time">Tue, Jun 25 - 7:00 PM</p>
+                <p class="event-address">555 Saddledome Rise SE, Calgary, AB T2G 2W1</p>
+                <p class="event-description">Get ready for an electrifying night with Bruno
+                    Mars! Feel the groove, dance to the hits, and
+                    experience unforgettable energy live in
+                    Saddledome.</p>
+                <p class="event-price"><span>$30.00 CAD</span> /Person</p>
+            </div>
+            <div class="event-image-container">
+                <img class="event-image" src="../assets/Joryney Square.png" alt="Event Image">
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="event-card">
+            <div class="event-date-container">
+                <p class="day">25</p>
+                <p class="month">JUN</p>
+            </div>
+            <div class="event-information-container">
+                <p class="event-title">Taylor Swift Eras Tour</p>
+                <p class="event-date-time">Tue, Jun 25 - 7:00 PM</p>
+                <p class="event-address">555 Saddledome Rise SE, Calgary, AB T2G 2W1</p>
+                <p class="event-description">Get ready for an electrifying night with Bruno
+                    Mars! Feel the groove, dance to the hits, and
+                    experience unforgettable energy live in
+                    Saddledome.</p>
+                <p class="event-price"><span>$30.00 CAD</span> /Person</p>
+            </div>
+            <div class="event-image-container">
+                <img class="event-image" src="../assets/Talor Swift Square.png" alt="Event Image">
+            </div>
+        </div>
+    </div>
+
+    <div class="filter-popup" id="filterPopup">
+        <div class="filter-header">
+            <span class="filter-title">Filter</span>
+            <span class="filter-close" onclick="closeFilter()">X</span>
+        </div>
+
+        <hr class="filter-line">
+
+        <div class="slider-container">
+            <div class="filter-control">
+                <span class="slider-label">Price ($):</span>
+                <span class="minimize-price" id="minimizePrice">-</span>
+            </div>
+            <div class="sliders_control price_sliders_control">
+                <input id="fromSlider" type="range" value="10" min="0" max="100" />
+                <input id="toSlider" type="range" value="40" min="0" max="100" />
+            </div>
+            <div class="form_control price_form_control">
+                <div class="form_control_container">
+                    <!-- <div class="form_control_container__time">Min</div> -->
+                    <input class="form_control_container__time__input" type="number" id="fromInput" value="10" min="0"
+                        max="100" />
+                </div>
+                <div class="form_control_container">
+                    <!-- <div class="form_control_container__time max">Max</div> -->
+                    <span>
+                        <input class="form_control_container__time__input max" type="number" id="toInput" value="40"
+                            min="0" max="100" />
+                </div>
+            </div>
+        </div>
+
+        <hr class="filter-line">
+
+        <div class="slider-container">
+            <div class="filter-control">
+                <span class="slider-label">Distance (km):</span>
+                <span class="minimize-distance" id="minimizeDistance">-</span>
+            </div>
+            <div class="sliders_control distance_sliders_control">
+                <input id="fromSlider2" type="range" value="10" min="0" max="100" />
+                <input id="toSlider2" type="range" value="40" min="0" max="100" />
+            </div>
+            <div class="form_control distance_form_control">
+                <div class="form_control_container">
+                    <!-- <div class="form_control_container__time">Min</div> -->
+                    <input class="form_control_container__time__input" type="number" id="fromInput2" value="10" min="0"
+                        max="100" />
+                </div>
+                <div class="form_control_container">
+                    <!-- <div class="form_control_container__time max">Max</div> -->
+                    <span>
+                        <input class="form_control_container__time__input max" type="number" id="toInput2" value="40"
+                            min="0" max="100" />
+                </div>
+            </div>
+        </div>
+
+        <hr class="filter-line">
+
+        <div class="filter-buttons-container">
+            <div class="reset-filter filter-button">
+                Reset
+            </div>
+            <div class="apply-filter filter-button">
+                Apply
+            </div>
+        </div>
     </div>
 </body>
 <script src="../scripts/searchPage.js"></script>

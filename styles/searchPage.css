@@ -1,3 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+/* .homepage-container {
+    max-width: 100%;
+    padding: 10px;
+} */
+
+.event-card {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    gap: 16px;
+    padding-left: 16px;
+    margin: 5px 10px 5px 10px;
+    height: 140px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    height: 2px;
+}
+
+.event-title {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.event-date-time {
+    font-weight: bold;
+    font-size: 9px;
+}
+
+.event-address {
+    font-weight: bold;
+    font-size: 9px;
+}
+
+.event-description {
+    font-size: 11px;
+    margin: 5px 0 7px 0;
+    color: #777;
+}
+
+.event-price>span {
+    font-weight: bold;
+}
+
+.event-date-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Center vertically */
+    align-items: center;
+    /* Center horizontally */
+    /* Add margin for spacing */
+}
+
+.day {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.month {
+    font-size: 10px;
+    font-weight: bold;
+    /* Remove default margin */
+    /* Adjust font size */
+}
+
+.event-information-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px 0 5px 0;
+
+    /* Center vertically */
+    /* align-items: center; */
+}
+
+.event-image-container {
+    width: 360px;
+    /* Set the width to the desired size */
+    /* Set the height to the same value as width for a square */
+}
+
+.event-image-container img {
+    width: 100%;
+    /* Make the image fill the container width */
+    height: 100%;
+    /* Make the image fill the container height */
+    object-fit: cover;
+    /* Cover the container without stretching */
+}
+
+.event-price {
+    font-size: 12px;
+}
+
+.homepage-container {
+    max-width: 100%;
+    padding: 10px;
+}
 .price-sort {
     display: inline-block;
     background-color: #f0f0f0;
@@ -12,4 +122,225 @@
 
 .price-sort i {
     margin-right: 6px;
+}
+
+.filter-title {
+    justify-self: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.filter-popup {
+    display: none;
+    position: fixed;
+    bottom: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    border-radius: 15px 15px 0 0;
+    border-top: 2px solid #bcbcbc;
+
+}
+
+.overlay {
+    display: none; /* Hide by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    z-index: 900; /* Below the filter popup but above other content */
+}
+
+.overlay.active {
+    display: block;
+}
+
+.filter-popup.active {
+    display: block;
+}
+
+.filter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    padding-top: 20px;
+    background-color: #ffffff;
+    justify-content: center;
+    border-radius: 15px 15px 0 0;
+
+}
+
+.filter-close {
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+}
+
+.slider-container {
+    padding: 5px 20px 5px 20px;
+    background-color: white;
+}
+
+.slider-label {
+    font-size: 14px;
+}
+
+.range_container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 35% auto;
+}
+
+.sliders_control {
+    position: relative;
+    min-height: 20px;
+    margin-top: 18px;
+
+}
+
+.form_control {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #635a5a;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    pointer-events: all;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px #C6C6C6;
+    cursor: pointer;
+}
+
+input[type=range]::-moz-range-thumb {
+    -webkit-appearance: none;
+    pointer-events: all;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px #C6C6C6;
+    cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-thumb:hover {
+    background: #f7f7f7;
+}
+
+input[type=range]::-webkit-slider-thumb:active {
+    box-shadow: inset 0 0 3px #387bbe, 0 0 9px #387bbe;
+    -webkit-box-shadow: inset 0 0 3px #387bbe, 0 0 9px #387bbe;
+}
+
+input[type="number"] {
+    color: #666;
+    width: 35px;
+    height: 19px;
+    font-size: 15px;
+    border: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    opacity: 1;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    background-color: #C6C6C6;
+    pointer-events: none;
+}
+
+#fromSlider {
+    height: 0;
+    z-index: 1;
+}
+
+#fromSlider2 {
+    height: 0;
+    z-index: 1;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.max {
+    text-align: end;
+}
+
+.filter-control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Center vertically */
+}
+
+.minimize-distance {
+    position: absolute;
+    right: 22px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.minimize-price {
+    position: absolute;
+    right: 22px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.filter-line {
+    border: none;
+    border-top: 2px solid #ddd;
+    margin: 10px 0 10px 0;
+}
+
+.filter-buttons-container {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    gap: 3px;
+    margin: 15px 0 15px 0;
+}
+
+.filter-button {
+    padding: 15px 30px 15px 30px;
+    cursor: pointer;
+    border: 2px solid #e7e7e7;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.apply-filter {
+    background-color: #001F45;
+    color: white;
 }
