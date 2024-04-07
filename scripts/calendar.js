@@ -14,9 +14,27 @@ function generateTimeSlots() {
 
     for (let i = 0; i < 24; i++) {
         let row = document.createElement("tr");
-        let cell = document.createElement("td");
-        cell.innerText = `${String(i).padStart(2, '0')}:00`;
-        row.appendChild(cell);
+        let timeSlotCell = document.createElement("td");
+        let eventCell = document.createElement("td");
+
+        timeSlotCell.classList.add("time-slot");
+        timeSlotCell.innerText = `${String(i).padStart(2, '0')}:00`;
+
+        eventCell.classList.add("event-column", "event-cell");
+
+        // Create a button element
+        let button = document.createElement("button");
+        button.innerText = "Click me"; // Button text
+        button.addEventListener("click", function() {
+            alert(`Button ${i} clicked`); // Example action on button click
+        });
+
+        // Append the button to the event cell
+        eventCell.appendChild(button);
+
+        row.appendChild(timeSlotCell);
+        row.appendChild(eventCell);
+
         timeBody.appendChild(row);
     }
 }
@@ -39,7 +57,6 @@ document.getElementById("export-button").addEventListener("click", function() {
 document.getElementById("done-button").addEventListener("click", function() {
     window.location.href = "../views/homePage.html"; // Go back to Homepage
 });
-
 
 updateCalendar();
 generateTimeSlots();

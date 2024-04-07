@@ -6,6 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
+    position: relative; /* Ensure body has a relative position */
 }
 
 .calendar-heading {
@@ -33,54 +34,60 @@ body {
     margin: 0;
 }
 
-.time-scroll-container {
-    overflow-y: auto;
-    max-height: calc(100vh - 280px); /* Adjust height according to available space */
-    padding: 10px;
-}
-
 #time-table {
     width: 100%;
+    border-collapse: collapse; /* Collapse borders for better styling */
 }
 
 #time-body td {
-    min-width: 100px;
-    height: 70px;
-    border: none;
     padding: 10px;
 }
 
-/* Add space between times */
-#time-body tr:not(:last-child) {
-    margin-bottom: 30px;
+.time-scroll-container {
+    overflow-y: auto;
+    max-height: calc(100vh - 300px); /* Adjust height according to available space */
+    padding: 10px;
 }
 
-/* Add horizontal lines between times */
-#time-body tr:not(:last-child) td {
-    border-bottom: 1px solid #ccc;
+.time-slot {
+    width: 60px; /* Adjust the width of the time slot column */
 }
 
-#done-button,
-#export-button {
-    font-size: 16px;
-    padding: 8px 16px;
-    margin: 5px 0;
-    border-radius: 5px; /* Apply rounded edges to both buttons */
+.event-column {
+    /* Adjust the width of the event column */
+}
+
+.event-cell {
+    border-bottom: 1px solid #ccc; /* Add borders to event cells */
 }
 
 .button-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Stack buttons vertically */
+    justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    position: absolute;
+    bottom: calc(var(--navbar-height) + 10px); /* Adjust based on the height of your navbar */
+    left: 0;
+    background-color: white;
+    z-index: 999; /* Ensure buttons are above other content */
+    padding: 10px;
+}
+
+#export-button,
+#done-button {
+    font-size: 16px;
+    padding: 8px 16px;
+    margin: 5px 0; /* Adjust margin between buttons */
+    border-radius: 5px; /* Apply rounded edges to buttons */
 }
 
 #export-button {
     background-color: #001F45;
     color: white;
 }
+
 #done-button {
     background-color: #4affb3;
     color: white;
