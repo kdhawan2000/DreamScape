@@ -34,23 +34,23 @@ hr {
 
 .event-title {
     font-weight: bold;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .event-date-time {
     font-weight: bold;
-    font-size: 9px;
+    font-size: 10px;
 }
 
 .event-address {
     font-weight: bold;
-    font-size: 9px;
+    font-size: 10px;
 }
 
 .event-description {
     font-size: 11px;
     margin: 5px 0 7px 0;
-    color: #777;
+    color: #5e5e5e;
 }
 
 .event-price>span {

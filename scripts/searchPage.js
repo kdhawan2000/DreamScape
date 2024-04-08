@@ -154,3 +154,121 @@ fromSlider2.oninput = () => controlFromSlider(fromSlider2, toSlider2, fromInput2
 toSlider2.oninput = () => controlToSlider(fromSlider2, toSlider2, toInput2);
 fromInput2.oninput = () => controlFromInput(fromSlider2, fromInput2, toInput2, toSlider2);
 toInput2.oninput = () => controlToInput(toSlider2, fromInput2, toInput2, toSlider2);
+
+// Sample JSON data
+const eventData1 = [
+    {
+        "day": "25",
+        "month": "JUN",
+        "title": "Bruno Mars Eras Tour",
+        "dateTime": "Tue, Jun 25 - 7:00 PM",
+        "address": "555 Saddledome Rise SE, Calgary, AB T2G 2W1",
+        "description": "Get ready for an electrifying night with Bruno Mars! Feel the groove, dance to the hits, and experience unforgettable energy live in Saddledome.",
+        "price": "$30.00 CAD",
+        "imageSrc": "../assets/Bruno Mars Square.png"
+    },
+    {
+        "day": "25",
+        "month": "JUN",
+        "title": "Journey World Tour",
+        "dateTime": "Tue, Jun 25 - 7:00 PM",
+        "address": "555 Saddledome Rise SE, Calgary, AB T2G 2W1",
+        "description": "Get ready for an electrifying night with Bruno Mars! Feel the groove, dance to the hits, and experience unforgettable energy live in Saddledome.",
+        "price": "$30.00 CAD",
+        "imageSrc": "../assets/Joryney Square.png"
+    },
+    {
+        "day": "25",
+        "month": "JUN",
+        "title": "Taylor Swift Eras Tour",
+        "dateTime": "Tue, Jun 25 - 7:00 PM",
+        "address": "555 Saddledome Rise SE, Calgary, AB T2G 2W1",
+        "description": "Get ready for an electrifying night with Bruno Mars! Feel the groove, dance to the hits, and experience unforgettable energy live in Saddledome.",
+        "price": "$30.00 CAD",
+        "imageSrc": "../assets/Talor Swift Square.png"
+    }
+];
+
+// Sample JSON data
+const eventData2 = [
+    {
+        "day": "25",
+        "month": "JUN",
+        "title": "Journey World Tour",
+        "dateTime": "Tue, Jun 25 - 7:00 PM",
+        "address": "555 Saddledome Rise SE, Calgary, AB T2G 2W1",
+        "description": "Get ready for an electrifying night with Bruno Mars! Feel the groove, dance to the hits, and experience unforgettable energy live in Saddledome.",
+        "price": "$30.00 CAD",
+        "imageSrc": "../assets/Joryney Square.png"
+    },
+    {
+        "day": "25",
+        "month": "JUN",
+        "title": "Taylor Swift Eras Tour",
+        "dateTime": "Tue, Jun 25 - 7:00 PM",
+        "address": "555 Saddledome Rise SE, Calgary, AB T2G 2W1",
+        "description": "Get ready for an electrifying night with Bruno Mars! Feel the groove, dance to the hits, and experience unforgettable energy live in Saddledome.",
+        "price": "$30.00 CAD",
+        "imageSrc": "../assets/Talor Swift Square.png"
+    },
+    {
+        "day": "25",
+        "month": "JUN",
+        "title": "Bruno Mars Eras Tour",
+        "dateTime": "Tue, Jun 25 - 7:00 PM",
+        "address": "555 Saddledome Rise SE, Calgary, AB T2G 2W1",
+        "description": "Get ready for an electrifying night with Bruno Mars! Feel the groove, dance to the hits, and experience unforgettable energy live in Saddledome.",
+        "price": "$30.00 CAD",
+        "imageSrc": "../assets/Bruno Mars Square.png"
+    }
+];
+
+// Function to generate and populate the events container
+function generateEvents(eventData) {
+    const eventsContainer = document.querySelector('.events-container');
+
+    // Clear existing content in the events container
+    eventsContainer.innerHTML = '';
+
+    // Loop through event data and create event cards
+    eventData.forEach(event => {
+        const eventCard = document.createElement('div');
+        eventCard.classList.add('event-card');
+
+        eventCard.innerHTML = `
+        <div class="event-date-container">
+          <p class="day">${event.day}</p>
+          <p class="month">${event.month}</p>
+        </div>
+        <div class="event-information-container">
+          <p class="event-title">${event.title}</p>
+          <p class="event-date-time">${event.dateTime}</p>
+          <p class="event-address">${event.address}</p>
+          <p class="event-description">${event.description}</p>
+          <p class="event-price"><span>${event.price}</span> /Person</p>
+        </div>
+        <div class="event-image-container">
+          <img class="event-image" src="${event.imageSrc}" alt="Event Image">
+        </div>
+      `;
+
+        eventsContainer.appendChild(eventCard);
+
+        // Add a horizontal line after each event card
+        const hr = document.createElement('hr');
+        eventsContainer.appendChild(hr);
+    });
+}
+
+let sort = false;
+generateEvents(eventData1);
+document.getElementById('priceSort').onclick = function () {
+    if (sort) {
+        generateEvents(eventData1);
+        sort = false;
+    } else {
+        generateEvents(eventData2);
+        sort = true;
+    }
+};
+
