@@ -108,14 +108,30 @@ hr {
     font-size: 12px;
 }
 
+.location-text {
+    font-size: 13px;
+    color: #353535;
+    margin-bottom: 3px;
+}
+.current-location {
+    color: #001F45;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.location-icon{
+    font-size: 14px;
+}
 .homepage-container {
     max-width: 100%;
     padding: 10px;
 }
+
 .price-sort {
     display: inline-block;
     background-color: #f0f0f0;
-    padding: 8px 12px;
+    margin-top: 4px;
+    padding: 6px 10px;
     border-radius: 4px;
     cursor: pointer;
 }
@@ -124,8 +140,9 @@ hr {
     background-color: #e0e0e0;
 }
 
-.price-sort i {
-    margin-right: 6px;
+.price-sort span {
+    margin-right: 4px;
+    font-size: 14px;
 }
 
 .filter-title {
@@ -149,14 +166,17 @@ hr {
 }
 
 .overlay {
-    display: none; /* Hide by default */
+    display: none;
+    /* Hide by default */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 90%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
-    z-index: 900; /* Below the filter popup but above other content */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent black */
+    z-index: 900;
+    /* Below the filter popup but above other content */
 }
 
 .overlay.active {
@@ -301,6 +321,10 @@ input[type=number] {
     justify-content: space-between;
     align-items: center;
     /* Center vertically */
+}
+
+.search-icon {
+    cursor: pointer;
 }
 
 .minimize-distance {
