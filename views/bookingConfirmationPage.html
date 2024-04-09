@@ -7,22 +7,70 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="../styles/navbar.css">
     <link rel="stylesheet" href="../styles/bookingConfirmationPage.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 10px;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            margin: 0;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: white; /* Reverting to white */
+            border-radius: 10px; /* Adding border radius */
+            padding: 20px; /* Adding padding */
+        }
+        h1 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .confirmation-box {
+            text-align: center;
+        }
+        .confirmation-box p {
+            margin-bottom: 10px;
+        }
+        .button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        .back-to-home {
+            display: block;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <script src="../scripts/navbar.js"></script>
-    <!-- <img src="../assets/Bruno Mars Concert.png" alt=""> -->
+    <div class="container">
+        <script src="../scripts/navbar.js"></script>
+        <!-- <img src="../assets/Bruno Mars Concert.png" alt=""> -->
 
-    <h1>Event: The Big Head</h1>
+        <h1>Event: The Big Head</h1>
 
-    <div class="confirmation-box">
-        <p><h2>Payment Complete!</h2></p>
-        <p><i>Add Ticket to your Wallet or Download to Save it.</i></p>
-        <p>Enjoy your trip!</p>
+        <div class="confirmation-box">
+            <p><h2>Payment Complete!</h2></p>
+            <p><i>Add Ticket to your Wallet or Download to Save it.</i></p>
+            <p>Enjoy your trip!</p>
 
-        <button class="button">Download</button>
-        <button class="button">Google Wallet</button>
+            <button class="button">Download</button>
+            <button class="button">Google Wallet</button>
 
-        <a href="eventDetailsPage.html" class="back-to-home">Back to Home</a>
+            <a href="eventDetailsPage.html" class="back-to-home">Back to Home</a>
+        </div>
     </div>
 </body>
 </html>
