@@ -28,6 +28,15 @@ body {
       width: 100%; 
     }
   }
+  .italic-text {
+    font-style: italic;
+    position: absolute;
+    bottom:10px;
+    right: 10px;
+    transform: translate(40%,0%); 
+    font-weight: 300;
+    color: white;
+  }
   .login-header {
    color: white;
    margin-top: -70px; 
