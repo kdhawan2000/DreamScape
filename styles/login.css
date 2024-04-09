@@ -42,8 +42,8 @@ body {
 
   .input-field:focus {
     outline: none;
-    border-color: #007bff; /* Adjust border color on focus */
-    box-shadow: 0 0 5px #007bff; /* Add shadow on focus */
+    border-color: #007bff;
+    box-shadow: 0 0 5px #007bff; 
   }
   .field {
     position: relative;
@@ -51,7 +51,7 @@ body {
 
   .field i {
     position: absolute;
-    left: 10px; /* Adjust icon position */
+    left: 10px; 
     top: 50%;
     transform: translateY(-50%);
     color: #ccc;
@@ -91,12 +91,14 @@ body {
   text-align: center;
   display: flex;
   justify-content: center;
+  align-items: center; 
   margin: 0 auto; 
  }
 
 .text-wrapper {
   font-family: "Inter-Bold", Helvetica;
-  font-weight: 400;
+  font-weight: 700;
+  font-size: 18px;
   color: #000000;
   }
   
@@ -147,14 +149,13 @@ body {
   width: 24px;
   height: 24px;
   position: absolute;
-  left: 10px;
+  left: 5px;
   top: 50%;
   transform: translateY(-50%);
 }
 
 .button-text {
-  margin-left: 40px;
-  vertical-align: middle;
+  margin-left: 8px;
 }
 
 .form-link {
@@ -165,13 +166,13 @@ body {
 .form-link span {
   font-size: 20px;
   font-weight: 400;
-  color: #ffffff; /* Change the color to white */
+  color: #ffffff; 
 }
 
 .form-link a.signup-link {
   font-size: 20px;
   font-weight: 400;
-  color: #4affb3; /* Change the color to green */
+  color: #4affb3; 
 }
 .password-toggle-icon {
   position: absolute;

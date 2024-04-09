@@ -30,13 +30,16 @@ function simulateReset() {
   } else {
     console.error("Invalid email format");
   }
-
-  setTimeout(closePopup, 3000);
 }
+document.addEventListener("DOMContentLoaded", function() {
+  // Get the submit button
+  var submitButton = document.getElementById("submitButton");
 
-function closePopup() {
-  document.getElementById('popup').style.display = 'none'; // Hide the popup
-}
-
-
-  
+  // Add event listener for click event
+  submitButton.addEventListener("click", function(event) {
+      event.preventDefault(); // Prevent the form from submitting
+      
+      // Show a pop-up message
+      alert("A link has been sent to the email.");
+  });
+});
