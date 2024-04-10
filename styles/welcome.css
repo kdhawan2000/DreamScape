@@ -22,14 +22,6 @@ body {
   margin: auto;
   display: block;
 }
-.italic-text {
-  font-style: italic;
-  position: absolute;
-  bottom:10px;
-  right: 10px;
-  transform: translate(40%,0%); 
-  font-weight: 300;
-}
 
 @media screen and (max-width: 800px) {
   .logoimage img {
