@@ -22,11 +22,13 @@ input {
     padding: 8px;
     border-radius: 5px;
     border: 1px solid #ccc;
-    width: 100%;
+    width: calc(100% - 20px); /* Adjust width to leave space for padding and margins */
     box-sizing: border-box;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     color: black; /* Set input text color to black for better contrast */
+    margin: 0 auto 10px; /* Center align inputs and add bottom margin for spacing */
 }
+
 
 img {
     max-width: 100%;
@@ -44,6 +46,7 @@ img {
     text-decoration: none;
     border-radius: 5px;
     margin-top: 10px;
+    margin-bottom: 20px;
     max-width: 200px; /* Set maximum width for buttons */
     margin: 0 auto 10px; /* Center align buttons and add bottom margin for spacing */
 }
