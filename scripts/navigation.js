@@ -25,3 +25,7 @@ function redirectToSignUp() {
 function redirectToWelcome() {
     window.location.href = "index.html";
 }
+
+function redirectToNotificationSettings() {
+    window.location.href = "../views/notificationsettings.html";
+}
