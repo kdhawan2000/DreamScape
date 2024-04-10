@@ -27,5 +27,5 @@ function redirectToWelcome() {
 }
 
 function redirectToNotificationSettings() {
-    window.location.href = "../views/notificationsettings.html";
+    window.location.href = "../views/notificationSettings.html";
 }
