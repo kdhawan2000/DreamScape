@@ -15,6 +15,22 @@ body {
     padding: 10px;
 }
 
+.location-text {
+    font-size: 13px;
+    color: #353535;
+    margin-bottom: 3px;
+}
+
+.current-location {
+    color: #001F45;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.location-icon {
+    font-size: 14px;
+}
+
 
 .upcoming-events-title,
 .nearby-events-title {
