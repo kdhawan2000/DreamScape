@@ -8,43 +8,77 @@
     <link rel="stylesheet" href="../styles/navbar.css">
     <link rel="stylesheet" href="../styles/eventDetailsPage.css">
     <style>
+        /* Body styles */
         body {
-            background-color: rgb(255, 255, 255);
-            color: rgb(0, 0, 0);
+            background-color: #007bff; /* Changed to match the provided style */
+            color: #fff; /* Changed to match the provided style */
             font-family: Arial, sans-serif;
+            padding: 0; /* Changed to 0 to remove extra padding */
+            margin: 0; /* Reset margin */
+            overflow-x: hidden; /* Hide horizontal scrollbar */
+        }
+
+        /* Container styles */
+        .container {
             padding: 10px;
+            min-height: 100vh; /* Set minimum height to full viewport height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
+
+        /* Header styles */
         h1 {
-            font-size: 18px;
+            font-size: 24px; /* Increased font size */
             margin-bottom: 10px;
+            text-align: center; /* Centered the heading */
         }
+
+        /* Image styles */
         img {
             max-width: 100%;
             height: auto;
-            margin-bottom: 10px;
+            margin: 10px auto; /* Centered the image */
+            display: block; /* Ensures proper spacing */
         }
+
+        /* Description styles */
         .description {
             margin-bottom: 10px;
+            text-align: center; /* Centered the description */
         }
+
+        /* Section styles */
         section {
-            margin-bottom: 10px;
+            margin-bottom: 20px; /* Increased margin for sections */
         }
+
         h3 {
-            font-size: 16px;
-            margin-bottom: 5px;
+            font-size: 18px; /* Increased font size */
+            margin-bottom: 10px; /* Increased margin */
         }
+
         p, em {
-            font-size: 14px;
-            margin-bottom: 5px;
+            font-size: 16px; /* Increased font size */
+            margin-bottom: 10px; /* Increased margin */
         }
+
+        /* Book event button styles */
         .book-event {
-            display: block;
+            display: inline-block;
             text-align: center;
-            padding: 10px;
-            background-color: #007bff;
-            color: #fff;
+            padding: 15px 30px; /* Increased padding */
+            background-color: #4affb3; /* Applied button background color */
+            color: #000; /* Changed text color */
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 15px; /* Applied border radius */
+            transition: background-color 0.3s ease; /* Smooth transition */
+            font-size: 18px; /* Increased font size */
+        }
+
+        .book-event:hover {
+            background-color: #0056b3; /* Darker color on hover */
         }
     </style>
 </head>
@@ -52,31 +86,33 @@
 
     <script src="../scripts/navbar.js"></script>
 
-    <h1>Event Details: Meet Up at the Big Head</h1>
+    <div class="container"> <!-- Added container -->
+        <h1>Event Details: Meet Up at the Big Head</h1>
 
-    <img src="../assets/Head.jpg" alt="Big Head">
+        <img src="../assets/Head.jpg" alt="Big Head">
 
-    <div class="description">
-        <section>
-            <p>A tour starting at a 12-meter, bent-wire girl's head in front of a landmark building. It's near Chinatown.</p>
-        </section>
+        <div class="description">
+            <section>
+                <p>A tour starting at a 12-meter, bent-wire girl's head in front of a landmark building. It's near Chinatown.</p>
+            </section>
 
-        <section>
-            <h3>Address</h3>
-            <em>6 Ave SE, Calgary, AB T2G 0G2</em> 
-        </section>
+            <section>
+                <h3>Address</h3>
+                <em>6 Ave SE, Calgary, AB T2G 0G2</em> 
+            </section>
 
-        <section>
-            <h3>Event Times</h3>
-            <p>Fridays, Saturdays, Sundays @ 17:00PM - 18:30PM</p>
-        </section>
+            <section>
+                <h3>Event Times</h3>
+                <p>Fridays, Saturdays, Sundays @ 17:00PM - 18:30PM</p>
+            </section>
 
-        <section>
-            <h3>Price of Event</h3>
-            <p>$25/person</p>
-        </section>
-    </div>
-    
-    <a href="paymentPage.html" class="book-event">Book Event</a>
+            <section>
+                <h3>Price of Event</h3>
+                <p>$25/person</p>
+            </section>
+        </div>
+        
+        <a href="paymentPage.html" class="book-event">Book Event</a>
+    </div> <!-- End of container -->
 </body>
 </html>
