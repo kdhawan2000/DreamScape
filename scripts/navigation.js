@@ -23,5 +23,5 @@ function redirectToSignUp() {
 }
 
 function redirectToWelcome() {
-    window.location.href = "welcome.html";
+    window.location.href = "index.html";
 }
