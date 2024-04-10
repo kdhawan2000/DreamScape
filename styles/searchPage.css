@@ -113,15 +113,17 @@ hr {
     color: #353535;
     margin-bottom: 3px;
 }
+
 .current-location {
     color: #001F45;
     font-weight: bold;
     font-size: 14px;
 }
 
-.location-icon{
+.location-icon {
     font-size: 14px;
 }
+
 .homepage-container {
     max-width: 100%;
     padding: 10px;
@@ -163,6 +165,22 @@ hr {
     border-radius: 15px 15px 0 0;
     border-top: 2px solid #bcbcbc;
 
+}
+
+.search-welcome-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Center vertically */
+    align-items: center;
+    /* Center horizontally */
+    height: 60vh;
+}
+
+.search-welcome-container > p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #909090;
 }
 
 .overlay {

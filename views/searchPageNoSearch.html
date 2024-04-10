@@ -23,9 +23,14 @@
         </div>
         <div class="search-bar">
             <!-- <form action="#" method="get"> -->
+
             <div class="input-group">
                 <div class="search-icon">
-                    <i class="fas fa-search"></i>
+                    <a href="searchPage.html">
+
+                        <i class="fas fa-search"></i>
+                    </a>
+
                 </div>
                 <input type="text" name="search" placeholder="Search for Events or Organizers" class="form-control" />
             </div>
@@ -42,69 +47,10 @@
     </div>
 
     <div class="events-container">
-        <!-- <div class="event-card">
-            <div class="event-date-container">
-                <p class="day">25</p>
-                <p class="month">JUN</p>
-            </div>
-            <div class="event-information-container">
-                <p class="event-title">Bruno Mars Eras Tour</p>
-                <p class="event-date-time">Tue, Jun 25 - 7:00 PM</p>
-                <p class="event-address">555 Saddledome Rise SE, Calgary, AB T2G 2W1</p>
-                <p class="event-description">Get ready for an electrifying night with Bruno
-                    Mars! Feel the groove, dance to the hits, and
-                    experience unforgettable energy live in
-                    Saddledome.</p>
-                <p class="event-price"><span>$30.00 CAD</span> /Person</p>
-            </div>
-            <div class="event-image-container">
-                <img class="event-image" src="../assets/Bruno Mars Square.png" alt="Event Image">
-            </div>
+        <div class="search-welcome-container">
+            <p>Find your next adventure</p>
+            <p>Search for events now!</p>
         </div>
-
-        <hr>
-
-        <div class="event-card">
-            <div class="event-date-container">
-                <p class="day">25</p>
-                <p class="month">JUN</p>
-            </div>
-            <div class="event-information-container">
-                <p class="event-title">Journey World Tour</p>
-                <p class="event-date-time">Tue, Jun 25 - 7:00 PM</p>
-                <p class="event-address">555 Saddledome Rise SE, Calgary, AB T2G 2W1</p>
-                <p class="event-description">Get ready for an electrifying night with Bruno
-                    Mars! Feel the groove, dance to the hits, and
-                    experience unforgettable energy live in
-                    Saddledome.</p>
-                <p class="event-price"><span>$30.00 CAD</span> /Person</p>
-            </div>
-            <div class="event-image-container">
-                <img class="event-image" src="../assets/Joryney Square.png" alt="Event Image">
-            </div>
-        </div>
-
-        <hr>
-
-        <div class="event-card">
-            <div class="event-date-container">
-                <p class="day">25</p>
-                <p class="month">JUN</p>
-            </div>
-            <div class="event-information-container">
-                <p class="event-title">Taylor Swift Eras Tour</p>
-                <p class="event-date-time">Tue, Jun 25 - 7:00 PM</p>
-                <p class="event-address">555 Saddledome Rise SE, Calgary, AB T2G 2W1</p>
-                <p class="event-description">Get ready for an electrifying night with Bruno
-                    Mars! Feel the groove, dance to the hits, and
-                    experience unforgettable energy live in
-                    Saddledome.</p>
-                <p class="event-price"><span>$30.00 CAD</span> /Person</p>
-            </div>
-            <div class="event-image-container">
-                <img class="event-image" src="../assets/Talor Swift Square.png" alt="Event Image">
-            </div>
-        </div> -->
     </div>
 
     <div class="filter-popup" id="filterPopup">
@@ -178,18 +124,6 @@
     </div>
 </body>
 <script src="../scripts/searchPage.js"></script>
-<script>
-    generateEvents(eventData1);
-    document.getElementById('priceSort').onclick = function () {
-        if (sort) {
-            generateEvents(eventData1);
-            sort = false;
-        } else {
-            generateEvents(eventData2);
-            sort = true;
-        }
-    };
 
-</script>
 
 </html>

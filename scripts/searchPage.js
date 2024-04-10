@@ -261,14 +261,4 @@ function generateEvents(eventData) {
 }
 
 let sort = false;
-generateEvents(eventData1);
-document.getElementById('priceSort').onclick = function () {
-    if (sort) {
-        generateEvents(eventData1);
-        sort = false;
-    } else {
-        generateEvents(eventData2);
-        sort = true;
-    }
-};
 
