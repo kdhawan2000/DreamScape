@@ -196,3 +196,7 @@ body {
   color: #000;
 }
 
+.login-header {
+  font-size: 24px; /* Adjust the font size to your preference */
+  font-weight: bold; /* Optionally, make the text bold */
+}
