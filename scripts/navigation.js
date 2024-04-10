@@ -29,3 +29,8 @@ function redirectToWelcome() {
 function redirectToNotificationSettings() {
     window.location.href = "../views/notificationSettings.html";
 }
+
+function redirectbackToNotificationsPage() {
+    alert("Changes to notification settings are confirmed.");
+    window.location.href = "../views/notificationsPage.html";
+}

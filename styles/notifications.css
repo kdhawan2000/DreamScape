@@ -14,7 +14,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     min-height: 100vh;
     padding: 20px;
 }
@@ -104,4 +104,91 @@ label {
     border: none;
     cursor: pointer;
     font-size: 25px;
+}
+
+.notification-option {
+    margin-bottom: 20px;
+}
+
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.custom-dropdown select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    width: 250px; /* Adjust width as needed */
+}
+
+.custom-dropdown select:focus {
+    outline: none;
+}
+
+.custom-dropdown .dropdown-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #555;
+    pointer-events: none;
+}
+
+.notification-option {
+    margin: 20px auto; /* Center the container horizontally */
+    text-align: center; /* Center the dropdown contents */
+}
+
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto; /* Center the dropdown horizontally */
+}
+
+.notification-option {
+    font-family: Arial, sans-serif;
+}
+
+.notification-option h2 {
+    font-size: 20px;
+    color: #f6eded;
+}
+
+.notification-option ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.notification-option li {
+    margin-bottom: 10px;
+}
+
+.notification-option label {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    color: #f9f7f7;
+}
+
+.notification-option input[type="checkbox"] {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* Styling when checkbox is checked */
+.notification-option input[type="checkbox"]:checked + label {
+    font-weight: bold;
+    color: #000;
 }

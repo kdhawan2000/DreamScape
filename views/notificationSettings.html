@@ -18,28 +18,50 @@
         <h1>Notification Settings</h1>
 
         <div class="notification-option">
-            <input type="checkbox" id="email-notification" name="email-notification">
-            <label for="email-notification">Receive Notifications on email</label>
+            <h2>Choose Notification Method:</h2>
+            <br>
+            <div class="custom-dropdown">
+                <select id="notification-method" name="notification-method">
+                    <option value="both">Both App and Email</option>
+                    <option value="email">Only Email</option>
+                    <option value="app">Only App</option>
+                </select>
+                <span class="dropdown-icon"></span>
+            </div>
         </div>
-
-        <div class="notification-option">
-            <input type="checkbox" id="app-dropdown-notification" name="app-dropdown-notification">
-            <label for="app-dropdown-notification">Receive Notifications on App</label>
-        </div>
+        
 
         <br>
         
         <div class="notification-option">
-            <input type="checkbox" id="new-itinerary-notification" name="new-itinerary-notification">
-            <label for="new-itinerary-notification">Send notifications for new itinerary added</label>
+            <h2><label for="notification-types">Send notifications for:</label></h2>
+            <br>
+            <h3>
+                <ul id="notification-types">
+                    <li>
+                        <label for="recommendation-notification">Recommendations</label>
+                        <input type="checkbox" id="recommendation-notification" name="recommendation-notification" checked>
+                    </li>
+                    <li>
+                        <label for="profile-editing-notification">Changes to Profile</label>
+                        <input type="checkbox" id="profile-editing-notification" name="profile-editing-notification" checked>
+                    </li>
+                    <li>
+                        <label for="event-reminders-notification">Event Reminders</label>
+                        <input type="checkbox" id="event-reminders-notification" name="event-reminders-notification" checked>
+                    </li>
+                    <li>
+                        <label for="changes-to-booked-events-notification">Changes to booked events</label>
+                        <input type="checkbox" id="changes-to-booked-events-notification" name="changes-to-booked-events-notification" checked>
+                    </li>
+                </ul>
+            </h3>
         </div>
+        
 
-        <div class="notification-option">
-            <input type="checkbox" id="profile-edited-notification" name="profile-edited-notification">
-            <label for="profile-edited-notification">Send notifications for changes to profile</label>
-        </div>
+        <div style="margin-top: 30px;"></div> 
 
-        <button class="save-button" onclick="redirectToNotificationsPage()">Save</button>
+        <button class="save-button" onclick="redirectbackToNotificationsPage()">Save</button>
     </div>
 </body>
 
