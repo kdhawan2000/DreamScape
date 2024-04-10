@@ -1,3 +1,7 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 body {
     background-color: navy;
     color: white;
@@ -6,12 +10,12 @@ body {
 }
 
 h1 {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
+
 section {
-    margin-top: 20px;
-    padding: 10px;
+    padding: 10px 15px;
 }
 
 h3 {
@@ -24,19 +28,22 @@ em {
 }
 
 img {
-    width: 200px;
-    height: 200px;
-    margin: 20px auto;
+
+    max-width: 88%;
+    height: auto;
+    margin: 10px auto;
     display: block;
+    margin-bottom: 20px;
+
 }
 
 .description {
     background-color: white;
-    padding: 20px;
     border-radius: 10px;
     margin: 0 auto;
-    width: 60%;
+    max-width: 88%;
     color: black;
+    padding: 20px 0;
     /* Added font color */
 }
 
