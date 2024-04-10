@@ -7,59 +7,71 @@
     <title>Notifications</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="../styles/navbar.css">
-    <link rel="stylesheet" href="../styles/notificationsPage.css">
+    <link rel="stylesheet" href="../styles/notifications.css">
 
     <script src="../scripts/navigation.js"></script>
 </head>
 
 <body>
     <script src="../scripts/navbar.js"></script>
+    <button class="settings-button" onclick="window.location.href='notificationSettings.html'">
+        <i class="fas fa-cog"></i>
+    </button>
     <div class="notification-body">
         <h1 class="notifications-title">Notifications</h1>
         <div class="notification-container">
-            <p class="close-button">x</p>
             <div class="notification-icon">
-                <i class="fa-solid fa-ticket"></i>
+                <i class="fas fa-calendar-check"></i>
             </div>
             <div class="notification-info">
                 <h2 class="notification-subject">
-                    Important Notification: Booked Eras Tour 
+                    Booking confirmed! 
                 </h2>
                 <p class="notification-text">
-                    Bruno Mars concert Coming up @ 8:00 PM.....
+                    Your booking for the event "Bruno Mars Eras Tour" is confirmed! Kindly check your email for the confirmation.
                 </p>
             </div>
         </div>
         <div class="notification-container">
-            <p class="close-button">x</p>
             <div class="notification-icon">
-                <i class="fa-solid fa-ticket"></i>
+                <i class="fas fa-calendar-times"></i>
             </div>
             <div class="notification-info">
                 <h2 class="notification-subject">
-                    Important Notification: Credit Card Cancellation
+                    Event cancelled! 
                 </h2>
                 <p class="notification-text">
-                    We regret to inform you that, after careful review, we have mad...
+                    Your booking for the event "The Big Head Tour" has been cancelled by the host! Kindly check your email initiating the refund.
                 </p>
             </div>
         </div>
         <div class="notification-container">
-            <p class="close-button">x</p>
             <div class="notification-icon">
-                <i class="fa-solid fa-ticket"></i>
+                <i class="fas fa-user"></i>
             </div>
             <div class="notification-info">
                 <h2 class="notification-subject">
-                    Notification: Similar events
+                    Profile Photo changed!
                 </h2>
                 <p class="notification-text">
-                    We think you might like this event happening in Calgary saddledome...
+                    Thank you for confirming your profile photo change! Kindly check your email for the confirmation.
+                </p>
+            </div>
+        </div>
+        <div class="notification-container">
+            <div class="notification-icon">
+                <i class="fas fa-bell"></i>
+            </div>
+            <div class="notification-info">
+                <h2 class="notification-subject">
+                    Similar events
+                </h2>
+                <p class="notification-text">
+                    Based on your bookings previously, we think you might like the "Taylor Swift Eras Tour" event happening in Calgary. Follow instructions sent to your email and get $10 off.
                 </p>
             </div>
         </div>
     </div>
-
 
 </body>
 

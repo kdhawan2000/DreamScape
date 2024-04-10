@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
 }
 
 body {
@@ -17,6 +17,56 @@ body {
     justify-content: center;
     min-height: 100vh;
     padding: 20px;
+}
+
+.notification-container {
+    display: flex;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    margin-left: 20px;
+    margin-right: 20px; 
+    position: relative;
+}
+
+.close-button{
+    position: absolute;
+    top: -3px;
+    right: 5px;
+    font-size: 0px;
+}
+
+.notification-icon {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.notification-icon>i {
+    align-self: center;
+    font-size: 40px;
+    margin-right: 20px;
+    color: #e6e9ed;
+}
+
+.notification-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.notification-subject {
+    font-size: 14px;
+}
+
+.notification-text {
+    font-size: 13px;
+}
+
+.notifications-title {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    font-size: 30px;
 }
 
 h1 {
@@ -43,4 +93,15 @@ label {
 
 .save-button:hover {
     background-color: darkgreen;
+}
+
+.settings-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
 }
