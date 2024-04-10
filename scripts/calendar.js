@@ -1,6 +1,9 @@
 console.log("Script loaded");
 
 let currentDate = new Date();
+let currentUTCDate = new Date(Date.UTC(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate(), 0, 0, 0));
+
+
 
 function updateCalendar() {
     const currentDateElement = document.getElementById("current-date");
@@ -8,7 +11,7 @@ function updateCalendar() {
     currentDateElement.textContent = formattedDate;
 }
 
-function generateTimeSlots() {
+function generateTimeSlots(currentDate) { // Pass currentDate as a parameter
     const timeBody = document.getElementById("time-body");
     timeBody.innerHTML = "";
 
@@ -31,16 +34,14 @@ function generateTimeSlots() {
                 const event = data.find(event => event.date === currentDateISOString && event.start_time === currentTimeString);
 
                 if (event) {
-                    // Create a button element with event name as text
                     let button = document.createElement("button");
-                    button.innerText = event.name; // Event name as button text
-                    button.classList.add("event-button"); // Add event-button class
+                    button.innerText = event.name;
+                    button.classList.add("event-button");
 
-                    button.addEventListener("click", function() {
-                        alert(`Event Name: ${event.name}\nEvent Info: ${event.info}`); // Display event info on button click
+                    button.addEventListener('click', () => {
+                        window.location.href = "../views/eventDetailsPageBrunoMars2.html";
                     });
 
-                    // Append the button to the event cell
                     eventCell.appendChild(button);
                 }
             })
@@ -56,13 +57,13 @@ function generateTimeSlots() {
 function updatePrevDay() {
     currentDate.setDate(currentDate.getDate() - 1);
     updateCalendar();
-    generateTimeSlots();
+    generateTimeSlots(currentDate); // Pass currentDate to generateTimeSlots
 }
 
 function updateNextDay() {
     currentDate.setDate(currentDate.getDate() + 1);
     updateCalendar();
-    generateTimeSlots();
+    generateTimeSlots(currentDate); // Pass currentDate to generateTimeSlots
 }
 
 document.getElementById("prev-day").addEventListener("click", updatePrevDay);
@@ -75,4 +76,4 @@ document.getElementById("done-button").addEventListener("click", function() {
 });
 
 updateCalendar();
-generateTimeSlots();
+generateTimeSlots(currentDate); // Pass currentDate initially

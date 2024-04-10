@@ -49,8 +49,8 @@ img {
 
 .book-event {
     display: inline-block;
-    background-color: green;
-    color: white;
+    background-color: #4affb3;
+    color: black;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;

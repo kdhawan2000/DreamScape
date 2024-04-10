@@ -1,20 +1,9 @@
 [
     {
-        "name": "Event 1",
-        "date": "2024-04-07",
-        "start_time": "08:00",
-        "info": "This is event 1 info."
-    },
-    {
-        "name": "Event 2",
-        "date": "2024-04-07",
-        "start_time": "14:00",
-        "info": "This is event 2 info."
-    },
-    {
-        "name": "Event 3",
-        "date": "2024-04-07",
-        "start_time": "18:00",
-        "info": "This is event 3 info."
+        "name": "Bruno Mars Eras Tour",
+        "date": "2024-04-23",
+        "start_time": "19:00",
+        "address": "555 Saddledome Rise SE, Calgary, AB T2G 2W1",
+        "info": "Get ready for an electrifying night with Bruno Mars! Feel the groove, dance to the hits, and experience unforgettable energy live in Saddledome."
     }
 ]
