@@ -165,7 +165,8 @@ const eventData1 = [
         "address": "555 Saddledome Rise SE, Calgary, AB T2G 2W1",
         "description": "Get ready for an electrifying night with Bruno Mars! Feel the groove, dance to the hits, and experience unforgettable energy live in Saddledome.",
         "price": "$30.00 CAD",
-        "imageSrc": "../assets/Bruno Mars Square.png"
+        "imageSrc": "../assets/Bruno Mars Square.png",
+        "eventLink": "../views/eventDetailsPageBrunoMars.html"
     },
     {
         "day": "25",
@@ -219,7 +220,8 @@ const eventData2 = [
         "address": "555 Saddledome Rise SE, Calgary, AB T2G 2W1",
         "description": "Get ready for an electrifying night with Bruno Mars! Feel the groove, dance to the hits, and experience unforgettable energy live in Saddledome.",
         "price": "$30.00 CAD",
-        "imageSrc": "../assets/Bruno Mars Square.png"
+        "imageSrc": "../assets/Bruno Mars Square.png",
+        "eventLink": "../views/eventDetailsPageBrunoMars.html"
     }
 ];
 
@@ -234,7 +236,11 @@ function generateEvents(eventData) {
     eventData.forEach(event => {
         const eventCard = document.createElement('div');
         eventCard.classList.add('event-card');
-
+        if (event.eventLink) {
+            eventCard.addEventListener('click', () => {
+                window.location.href = `${event.eventLink}`;
+            });
+        }
         eventCard.innerHTML = `
         <div class="event-date-container">
           <p class="day">${event.day}</p>
