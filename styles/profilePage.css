@@ -1,78 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+.notification-body {
+    padding: 40px 20px 0 20px;
+}
+
+.notification-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: navy;
-    color: #fff;
-}
-
-.profilephoto-container {
-    text-align: center;
-    margin-bottom: 20px; /* Added margin bottom for spacing */
-}
-
-.profile-photo {
-    display: inline-block;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
     position: relative;
-    margin-bottom: 20px; /* Added margin bottom for spacing */
 }
 
-.profile-photo img {
-    width: 100px;
-    height: 100px; 
-    border-radius: 50%;
-}
-
-.edit-profile-button{
+.close-button{
     position: absolute;
-    bottom: 0;
-    right: 0;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
+    top: -3px;
+    right: 5px;
 }
 
-.edit-button,
-.notification-button,
-.payment-button,
-.logout-button,
-.delete-button {
-    display: block;
-    width: 350px; /* Increased button width */
-    margin: 20px auto; /* Center-align buttons */
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 15px; /* Increased button padding */
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
+.notification-icon {
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 
-.edit-profile-button {
-    background-color: #28a745; 
+.notification-icon>i {
+    align-self: center;
+    font-size: 40px;
+    margin-right: 8px;
+    color: #001F45;
+
 }
 
-.delete-button {
-    margin-top: 40px;
-    background-color: red;
+.notification-info {
+    display: flex;
+    flex-direction: column;
 }
 
-h2 {
-    color: #fff;
-    margin-bottom: 70px; /* Added margin bottom for spacing */
+.notification-subject {
+    font-size: 14px;
+}
+
+.notification-text {
+    font-size: 13px;
+}
+
+.notifications-title {
+    margin-bottom: 15px;
+    font-size: 30px;
 }
