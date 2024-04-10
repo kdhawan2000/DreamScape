@@ -1,125 +1,138 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #001F45;
-    text-decoration-color: #fff;
-  }
-  .logoimage {
-     box-sizing: border-box;
-  }
-  
-  .logoimage {
-    width: 70%;
-    max-width: 300px;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: -130px;
-  }
-  @media screen and (max-width: 600px) {
-    .logoimage img {
-      width: 100%; 
-    }
-  }
-  
-  .login-header {
-   color: white;
-   margin-top: -70px; 
-   text-align: left;
-  }
-  .input-field {
-    width: calc(100% - 30px); /* Adjust width to accommodate icon */
-    height: 30px;
-    border: 1px solid #ccc;
-    border-radius: 10px; /* Rounded edges */
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #001F45;
+  text-decoration-color: #fff;
+}
 
-  .input-field:focus {
-    outline: none;
-    border-color: #007bff;
-    box-shadow: 0 0 5px #007bff; 
-  }
-  .field {
-    position: relative;
-  }
+.logoimage {
+  box-sizing: border-box;
+}
 
-  .field i {
-    position: absolute;
-    left: 10px; 
-    top: 50%;
-    transform: translateY(-50%);
-    color: #ccc;
-  }
+i {
+  color: rgb(78, 78, 78) !important;
+}
 
-  .field input {
-    padding-left: 30px; 
-    width: calc(100% - 30px); 
-    height: 30px;
-    border-radius: 8px;
-  }
+.logoimage {
+  width: 70%;
+  max-width: 300px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -130px;
+}
 
-  .input-group input{
-    margin-bottom: 15px;
-  }  
-  .input-group label {
-    display: block;
-    margin-bottom: 5px;
+@media screen and (max-width: 600px) {
+  .logoimage img {
+    width: 100%;
   }
-  
-  .input-group input {
-    width: calc(100% - 30px);
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 15px;
-  }
-  
-  /* Login Button*/
+}
+
+.login-header {
+  color: white;
+  margin-top: -70px;
+  text-align: left;
+}
+
+.input-field {
+  width: calc(100% - 30px);
+  /* Adjust width to accommodate icon */
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  /* Rounded edges */
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px #007bff;
+}
+
+.field {
+  position: relative;
+}
+
+.field i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ccc;
+}
+
+.field input {
+  padding-left: 30px;
+  width: calc(100% - 30px);
+  height: 30px;
+  border-radius: 8px;
+}
+
+.input-group input {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: calc(100% - 30px);
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+
+/* Login Button*/
 .loginButton {
-  width: 70%; 
-  min-height: 30px; 
+  width: 70%;
+  min-height: 30px;
   position: absolute;
   border-radius: 15px;
-  background-color: #4affb3; 
+  background-color: #4affb3;
   border-color: rgba(255, 255, 255, 0);
   border-style: solid;
   text-align: center;
   display: flex;
   justify-content: center;
-  align-items: center; 
-  margin: 0 auto; 
- }
+  align-items: center;
+  margin: 0 auto;
+}
 
 .text-wrapper {
   font-family: "Inter-Bold", Helvetica;
   font-weight: 700;
   font-size: 18px;
   color: #000000;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
+}
 
-  .form-link a {
-    color: #ffffff; /* Change the color to white */
-  }
-  
+button:hover {
+  background-color: #0056b3;
+}
 
-.line{
+.form-link a {
+  color: #ffffff;
+  /* Change the color to white */
+}
+
+
+.line {
   position: relative;
   height: 1px;
   width: 100%;
   margin: 36px 0;
   background-color: #d4d4d4;
 }
-.line::before{
+
+.line::before {
   content: 'Or';
   position: absolute;
   top: 50%;
@@ -129,15 +142,16 @@ body {
   color: #8b8b8b;
   padding: 0 15px;
 }
+
 .googleButton {
   text-align: center;
 }
 
 .google-button {
-  background-color: #007bff; 
+  background-color: #007bff;
   color: white;
   border: none;
-  border-radius: 40px; 
+  border-radius: 40px;
   padding: 15px 20px;
   font-size: 18px;
   font-weight: bold;
@@ -167,14 +181,15 @@ body {
 .form-link span {
   font-size: 20px;
   font-weight: 400;
-  color: #ffffff; 
+  color: #ffffff;
 }
 
 .form-link a.signup-link {
   font-size: 20px;
   font-weight: 400;
-  color: #4affb3; 
+  color: #4affb3;
 }
+
 .password-toggle-icon {
   position: absolute;
   top: 50%;
@@ -195,4 +210,3 @@ body {
 .password-toggle-icon i:hover {
   color: #000;
 }
-

@@ -13,6 +13,8 @@
 
 <body>
     <script src="../scripts/navbar.js"></script>
+    <script src="../scripts/navigation.js"></script>
+
 
     <div class="homepage-container">
         <div class="location-container">
@@ -31,8 +33,8 @@
             <!-- </form>
             <div class="filter-icon">
                 <i class="fas fa-filter"></i> -->
-            </div>
-        </div>
+    </div>
+    </div>
 
     </div>
     <div class="upcoming-events-title">
@@ -60,7 +62,7 @@
                 <div class="event-time">Event Time</div>
             </div>
         </div>
-        <div class="event-card">
+        <div class="event-card nearby-bruno-card" id="nearby-bruno-card" onclick="redirectToBruno()">
             <div class="event-image-container">
                 <img class="event-image" src="../assets/Bruno Mars Concert.png" alt="Event Image">
             </div>
@@ -96,7 +98,7 @@
                 <div class="event-time">Event Time</div>
             </div>
         </div>
-        <div class="event-card">
+        <div class="event-card nearby-bruno-card" id="nearby-bruno-card" onclick="redirectToBrunoBook()">
             <div class="event-image-container">
                 <img class="event-image" src="../assets/Bruno Mars Concert.png" alt="Event Image">
             </div>
@@ -107,7 +109,8 @@
             </div>
         </div>
     </div>
-    </div>
+    <script src="../scripts/homepage.js"></script>
+
 </body>
 
 </html>

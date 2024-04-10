@@ -34,3 +34,11 @@ function redirectbackToNotificationsPage() {
     alert("Changes to notification settings are confirmed.");
     window.location.href = "../views/notificationsPage.html";
 }
+
+function redirectToBrunoBook() {
+    window.location.href = "../views/eventDetailsPageBrunoMars.html"; // Go back to Homepage
+}
+
+function redirectToBruno() {
+    window.location.href = "../views/eventDetailsPageBrunoMars2.html"; // Go back to Homepage
+}

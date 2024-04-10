@@ -25,4 +25,7 @@
     background-color: #0056b3; /* Change the hover background color */
   }
   
+  i {
+    color: rgb(78, 78, 78) !important;
+  }
   
