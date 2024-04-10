@@ -11,80 +11,96 @@
         body {
             font-family: Arial, sans-serif;
             padding: 10px;
-            background-color: rgb(255, 255, 255);
+            background-color: #007bff; /* Changed to match the provided style */
             color: white;
             margin: 0;
+            max-width: 400px; /* Set max-width */
+            height: 866px; /* Set height */
+            overflow-y: auto; /* Enable vertical scroll if needed */
         }
-        .container {
-            max-width: 400px;
-            margin: 0 auto;
+
+        /* Heading styles */
+        h3, h4, h2 {
+            margin: 10px 0;
+            color: #001F45; /* Changed text color to match the background */
+            text-align: center; /* Centered headings */
         }
+
+        /* Image styles */
         img {
             max-width: 100%;
             height: auto;
-            margin-bottom: 10px;
+            margin: 0 auto; /* Centered the image */
+            display: block; /* Ensures proper spacing */
+            margin-bottom: 10px; /* Added margin bottom */
         }
-        h3, h4, h2 {
-            margin: 10px 0;
-        }
+
+        /* Input styles */
         input[type="text"] {
             width: calc(100% - 20px);
-            padding: 8px;
-            margin: 5px 0;
-        }
-        form {
-            margin-bottom: 10px;
-        }
-        .payment-methods a {
-            display: block;
-            text-align: center;
             padding: 10px;
-            background-color: #007bff;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-bottom: 5px;
+            margin: 10px 0; /* Adjusted margin for better spacing */
+            border: 1px solid #ccc; /* Added border */
+            border-radius: 5px; /* Added border radius */
         }
+
+        /* Form styles */
+        form {
+            margin-bottom: 20px; /* Increased margin for better spacing */
+        }
+
+        /* Payment methods styles */
+        .payment-methods {
+            text-align: center; /* Centered payment methods */
+        }
+
+        .payment-methods a {
+            display: inline-block; /* Changed display to inline-block */
+            padding: 10px 20px; /* Increased padding for better spacing */
+            background-color: #4affb3; /* Changed button background color to green */
+            color: #001F45; /* Changed text color */
+            text-decoration: none;
+            border-radius: 5px; /* Applied border radius */
+            margin: 10px; /* Increased margin for better spacing */
+        }
+
         .payment-methods p {
-            text-align: center;
-            margin: 5px 0;
+            margin: 10px 0; /* Adjusted margin for better spacing */
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <script src="../scripts/navbar.js"></script>
+    <script src="../scripts/navbar.js"></script>
 
-        <img src="../assets/Head.jpg" alt="Big Head">
-        <h3>Big Head</h3>
-        <h4>$100.00</h4>
+    <img src="../assets/Head.jpg" alt="Big Head">
+    <h3>Big Head</h3>
+    <h4>$100.00</h4>
 
-        <form>
-            <label for="cardNumber"><h2>Card Number</h2></label>
-            <input type="text" id="cardNumber" name="cardNumber" placeholder="Enter card number">
-        </form>
+    <form>
+        <label for="cardNumber"><h2>Card Number</h2></label>
+        <input type="text" id="cardNumber" name="cardNumber" placeholder="Enter card number">
+    </form>
 
-        <form>
-            <label for="expiry"><h2>Expiry</h2></label>
-            <input type="text" id="expiry" name="expiry" placeholder="MM/YYYY">
-        </form>
+    <form>
+        <label for="expiry"><h2>Expiry</h2></label>
+        <input type="text" id="expiry" name="expiry" placeholder="MM/YYYY">
+    </form>
 
-        <form>
-            <label for="cvv"><h2>CVV</h2></label>
-            <input type="text" id="cvv" name="cvv" placeholder="Enter CVV">
-        </form>
+    <form>
+        <label for="cvv"><h2>CVV</h2></label>
+        <input type="text" id="cvv" name="cvv" placeholder="Enter CVV">
+    </form>
 
-        <form>
-            <label for="cardHolderName"><h2>Card Holder's Name</h2></label>
-            <input type="text" id="cardHolderName" name="cardHolderName" placeholder="Enter card holder's name">
-        </form>
+    <form>
+        <label for="cardHolderName"><h2>Card Holder's Name</h2></label>
+        <input type="text" id="cardHolderName" name="cardHolderName" placeholder="Enter card holder's name">
+    </form>
 
-        <div class="payment-methods">
-            <a href="bookingConfirmationPage.html">Pay with Credit</a>
-            <p>------- Or pay with -------</p>
-            <a href="bookingConfirmationPage.html">PayPal</a>
-            <a href="bookingConfirmationPage.html">Apple Pay</a>
-        </div>
+    <div class="payment-methods">
+        <a href="bookingConfirmationPage.html">Pay with Credit</a>
+        <p>------- Or pay with -------</p>
+        <a href="bookingConfirmationPage.html">PayPal</a>
+        <a href="bookingConfirmationPage.html">Apple Pay</a>
     </div>
 </body>
 </html>

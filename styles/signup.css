@@ -1,3 +1,13 @@
+.italic-text {
+  font-style: italic;
+  position: absolute;
+  bottom:10px;
+  right: 10px;
+  transform: translate(40%,0%); 
+  font-weight: 300;
+  color: white;
+}
+
 .signUpButton {
   width: 70%; 
   min-height: 30px; 
@@ -6,15 +16,17 @@
   background-color: #4affb3; 
   border-color: rgba(255, 255, 255, 0);
   border-style: solid;
-  text-align: center;
   display: flex;
   justify-content: center;
+  align-items: center; 
   margin: 0 auto;
+  font-weight: bold;
+
  }
   
   .text-wrapper {
     font-family: "Inter-Bold", Helvetica;
-    font-weight: 400;
+    font-weight: bold;
     color: #000000;
   }
   
