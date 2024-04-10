@@ -28,7 +28,6 @@ function generateTimeSlots(currentDate) { // Pass currentDate as a parameter
         fetch('../user-database/events.json')
             .then(response => response.json())
             .then(data => {
-                console.log("Date:", currentDate);
                 const currentDateISOString = currentDate.toISOString().split('T')[0];
                 const event = data.find(event => event.date === currentDateISOString && event.start_time === currentTimeString);
 
