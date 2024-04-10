@@ -174,7 +174,7 @@ const eventData1 = [
         "title": "Journey World Tour",
         "dateTime": "Tue, Jun 25 - 4:00 PM",
         "address": "219 8 Ave SW, Calgary, AB T2P 7N2",
-        "description": "Get ready for an unforgettable journey with the Journey World Tour at The Palace Theatre! Brace yourself for an evening of captivating music as the tour takes the stage live.",
+        "description": "Get ready for an unforgettable journey with the Journey World Tour at The Palace Theatre! Brace yourself for an evening of captivating music ...",
         "price": "$55.00 CAD",
         "imageSrc": "../assets/Joryney Square.png"
     },
@@ -184,7 +184,7 @@ const eventData1 = [
         "title": "Taylor Swift Eras Tour",
         "dateTime": "Fri, May 17 - 11:00 PM",
         "address": "2500 University Dr NW, Calgary, AB T2N 1N4",
-        "description": "Get swept away by the enchanting magic of Taylor Swift! Surrender to the rhythm and groove to the melodies as she takes the stage live at MacEwan Hall.",
+        "description": "Get swept away by the enchanting magic of Taylor Swift! Surrender to the rhythm and groove to the melodies as she takes the stage live at Mac ...",
         "price": "$90.00 CAD",
         "imageSrc": "../assets/Talor Swift Square.png"
     }
@@ -193,24 +193,24 @@ const eventData1 = [
 // Sample JSON data
 const eventData2 = [
     {
-        "day": "25",
-        "month": "JUN",
-        "title": "Journey World Tour",
-        "dateTime": "Tue, Jun 25 - 4:00 PM",
-        "address": "219 8 Ave SW, Calgary, AB T2P 7N2",
-        "description": "Get ready for an unforgettable journey with the Journey World Tour at The Palace Theatre! Brace yourself for an evening of captivating music as the tour takes the stage live.",
-        "price": "$55.00 CAD",
-        "imageSrc": "../assets/Joryney Square.png"
-    },
-    {
         "day": "17",
         "month": "MAY",
         "title": "Taylor Swift Eras Tour",
         "dateTime": "Fri, May 17 - 11:00 PM",
         "address": "2500 University Dr NW, Calgary, AB T2N 1N4",
-        "description": "Get swept away by the enchanting magic of Taylor Swift! Surrender to the rhythm and groove to the melodies as she takes the stage live at MacEwan Hall.",
+        "description": "Get swept away by the enchanting magic of Taylor Swift! Surrender to the rhythm and groove to the melodies as she takes the stage live at Mac ...",
         "price": "$90.00 CAD",
         "imageSrc": "../assets/Talor Swift Square.png"
+    },
+    {
+        "day": "25",
+        "month": "JUN",
+        "title": "Journey World Tour",
+        "dateTime": "Tue, Jun 25 - 4:00 PM",
+        "address": "219 8 Ave SW, Calgary, AB T2P 7N2",
+        "description": "Get ready for an unforgettable journey with the Journey World Tour at The Palace Theatre! Brace yourself for an evening of captivating music ...",
+        "price": "$55.00 CAD",
+        "imageSrc": "../assets/Joryney Square.png"
     },
     {
         "day": "22",
