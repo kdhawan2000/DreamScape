@@ -41,10 +41,8 @@ body {
 }
 
 #time-body td {
-    padding-top: 20px; /* Increase padding-top to increase cell height */
-    padding-bottom: 20px; /* Increase padding-bottom to increase cell height */
-    padding-left: 10px; /* Keep padding-left minimal */
-    padding-right: 10px; /* Keep padding-right minimal */
+    vertical-align: top;
+    height: 70px;
 }
 
 .time-scroll-container {
@@ -63,7 +61,7 @@ body {
 }
 
 .event-cell {
-    border-bottom: 1px solid #ccc; /* Add borders to event cells */
+    border-top: 1px solid #ccc; /* Add borders to event cells */
     height: 100%; /* Set the height of the event cell to 100% */
     position: relative; /* Add relative positioning */
 }
