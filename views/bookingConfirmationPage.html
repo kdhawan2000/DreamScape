@@ -11,18 +11,25 @@
 <body>
     <div class="container">
         <script src="../scripts/navbar.js"></script>
-        <h1>Event: The Big Head</h1>
+        <h1>Event: Bruno Mars Eras Tour</h1>
 
         <div class="confirmation-box">
             <p><h2>Payment Complete!</h2></p>
             <p><i>Add Ticket to your Wallet or Download to Save it.</i></p>
             <p>Enjoy your trip!</p>
 
-            <button class="button">Download</button>
+            <button class="button" onclick="downloadTicket()">Download</button>
             <button class="button">Google Wallet</button>
 
-            <a href="eventDetailsPage.html" class="back-to-home">Back to Home</a>
+            <a href="homePage.html" class="back-to-home">Back to Home</a>
         </div>
     </div>
+
+    <script>
+        function downloadTicket() {
+            // Display a popup notification for ticket download
+            alert("Ticket downloaded to device!");
+        }
+    </script>
 </body>
 </html>
