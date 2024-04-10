@@ -87,8 +87,8 @@ body {
     color: white;
     font-size: 16px;
     border-radius: 10px;
-    width: calc(100% - 10px); /* Adjust width to fit within cell */
-    height: calc(100% - 10px); /* Adjust height to fit within cell */
+    width: calc(100% - 5px); /* Adjust width to fit within cell */
+    height: calc(100% - 5px); /* Adjust height to fit within cell */
     position: absolute; /* Set position to absolute */
     top: 50%; /* Position button vertically in the middle */
     left: 50%; /* Position button horizontally in the middle */
