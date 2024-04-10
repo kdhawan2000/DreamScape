@@ -1,20 +1,36 @@
+/* CSS for Payment Page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
+    font-family: Arial, sans-serif;
+    position: relative;
     background-color: navy;
     color: white;
-    font-family: Arial, sans-serif;
     text-align: center;
+    overflow: auto;
+}   
+
+.content {
+    width: 100%;
+    max-width: 300px; /* Adjust as needed */
+    margin: auto; /* Center align */
+    padding: 20px;
+    height: calc(100vh - var(--navbar-height)); /* Calculate max height based on viewport height */
 }
 
-h2 {
-    margin-top: 20px;
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
 }
 
-h3 {
-    margin-top: 10px;
-}
-
-h4 {
-    margin-top: 10px;
+h3, h4, h2 {
+    margin: 10px 0;
+    color: #001F45;
 }
 
 form {
@@ -36,12 +52,13 @@ input {
 }
 
 .payment-methods {
-    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 100px;
 }
 
 .payment-methods a {
     display: block;
-    background-color: green;
+    background-color: #4affb3;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
