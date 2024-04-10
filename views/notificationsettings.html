@@ -14,7 +14,31 @@
 
 <body>
     <script src="../scripts/navbar.js"></script>
-    <h1>Notification Settings</h1>
+    <div class="container">
+        <h1>Notification Settings</h1>
+
+        <div class="notification-option">
+            <input type="checkbox" id="email-notification" name="email-notification">
+            <label for="email-notification">Receive Email Notifications</label>
+        </div>
+
+        <div class="notification-option">
+            <input type="checkbox" id="app-dropdown-notification" name="app-dropdown-notification">
+            <label for="app-dropdown-notification">Receive App Dropdown Notifications</label>
+        </div>
+
+        <div class="notification-option">
+            <input type="checkbox" id="new-itinerary-notification" name="new-itinerary-notification">
+            <label for="new-itinerary-notification">Notify for New Itinerary</label>
+        </div>
+
+        <div class="notification-option">
+            <input type="checkbox" id="profile-edited-notification" name="profile-edited-notification">
+            <label for="profile-edited-notification">Notify for Profile Name Edited</label>
+        </div>
+
+        <button class="save-button" onclick="redirectToNotificationsPage()">Save</button>
+    </div>
 </body>
 
 </html>
