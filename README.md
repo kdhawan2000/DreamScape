@@ -4,7 +4,7 @@
 
 As part of a group of five students at the University of Calgary, we collaborated on a project for CPSC 481 to design DreamScape, a website-based app system prioritizing human-computer interaction. The app was developed for a travel company to enhance their clients’ travel experiences, specifically addressing challenges in a post-COVID world.
 
-The app's primary purpose was to provide travelers with a seamless experience by integrating features that catered to essential travel needs. It aimed to help users manage their itineraries, discover local attractions, and acc.ess critical resources such as emergency contacts and nearby amenities. Our focus was on designing an intuitive interface that would simplify the user journey while addressing practical challenges faced by travelers.  
+The app's primary purpose was to provide travelers with a seamless experience by integrating features that catered to essential travel needs. It aimed to help users manage their itineraries, discover local attractions, and access critical resources such as emergency contacts and nearby amenities. Our focus was on designing an intuitive interface that would simplify the user journey while addressing practical challenges faced by travelers.  
 
 This project enabled us to gain valuable insights into human-computer interaction principles by conducting heuristic evaluations on each other’s components and gathering feedback from a group of general users. This iterative process highlighted areas for improvement, allowing us to refine the design and better understand how to create user-centered, practical, and intuitive solutions.
 
@@ -37,3 +37,4 @@ Over time, the design of Dreamscape has undergone significant development, drawi
 
 However, despite its strengths in usability and functionality, the app does encounter certain limitations. Notably, users may find it challenging to adjust filters after searching or sorting events, owing to constraints such as project timelines and backend infrastructure.
 
+Thank you!
